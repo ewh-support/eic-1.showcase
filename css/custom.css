@@ -5497,7 +5497,7 @@ h2+.category-carousel {
 
 .service-banner-title h6 {
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 @media (max-width: 991px) {
