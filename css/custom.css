@@ -4643,13 +4643,13 @@
     }
     /*-----  3.10 Person block       --------*/
     
-    .person {
+    .person1 {
         margin-top: 11px;
         text-align: center;
         min-height: 330px
     }
     
-    .person-image {
+    .person1-image {
         margin-bottom: 27px;
     }
     
@@ -4662,7 +4662,7 @@
         -o-transition: all 0.75s ease;
     }
     
-    .person:hover .person-image img {
+    .person1:hover .person1-image img {
         display: block;
         position: relative;
         border-radius: 20%;
