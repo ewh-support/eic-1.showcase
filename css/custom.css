@@ -4673,16 +4673,16 @@
         border-radius: 20%;
     }
     
-    .person-title {
+    .person1-title {
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         text-transform: none;
         color: #005395;
         height: 30px;
-        font-size: 18px
+        font-size: 17px
     }
     
-    .person-position {
+    .person1-position {
         padding: 0;
         font-style: italic;
         color: #000;
@@ -4695,7 +4695,7 @@
         width: 240px;
     }
     
-    .person-position p {
+    .person1-position p {
         font-size: 15px;
         line-height: 1px;
     }
