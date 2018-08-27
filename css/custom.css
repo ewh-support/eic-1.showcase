@@ -4653,6 +4653,11 @@
         margin-bottom: 27px;
     }
     
+    .row1 {
+        width: 89%;
+        margin-left: 5.5%;
+    }
+    
     .person1-image img {
         border-radius: 10%;
         margin: 0 auto;
@@ -4673,6 +4678,8 @@
         font-weight: 600;
         text-transform: none;
         color: #005395;
+        height: 30px;
+        font-size: 18px
     }
     
     .person1-position {
@@ -4681,12 +4688,16 @@
         color: #000;
         font-weight: normal;
         text-align: center;
-        margin-top: 10px
+        margin-top: 40px
+    }
+    
+    .lg {
+        width: 240px;
     }
     
     .person1-position p {
         font-size: 15px;
-        line-height: 2px;
+        line-height: 1px;
     }
     
     @media (max-width: 767px) {
