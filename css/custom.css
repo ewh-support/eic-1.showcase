@@ -4643,17 +4643,17 @@
     }
     /*-----  3.10 Person block       --------*/
     
-    .person {
+    .person1 {
         margin-top: 11px;
         text-align: center;
         min-height: 330px
     }
     
-    .person-image {
+    .person1-image {
         margin-bottom: 27px;
     }
     
-    .person-image img {
+    .person1-image img {
         border-radius: 10%;
         margin: 0 auto;
         -webkit-transition: all 0.75s ease;
@@ -4662,20 +4662,20 @@
         -o-transition: all 0.75s ease;
     }
     
-    .person:hover .person-image img {
+    .person1:hover .person1-image img {
         display: block;
         position: relative;
         border-radius: 20%;
     }
     
-    .person-title {
+    .person1-title {
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         text-transform: none;
         color: #005395;
     }
     
-    .person-position {
+    .person1-position {
         padding: 0;
         font-style: italic;
         color: #000;
@@ -4684,7 +4684,7 @@
         margin-top: 10px
     }
     
-    .person-position p {
+    .person1-position p {
         font-size: 15px;
         line-height: 2px;
     }
