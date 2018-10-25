@@ -453,11 +453,12 @@ $document.ready(function () {
 		$(window).scroll(function () {
 			//if (prevWindow < 992) return;
 			var st = getCurrentScroll();
-			if (st > headerOffset) {
+			console.log(st);
+			if (st > 100) {
 				if (!$(".stspace").length && !$body.hasClass('home')) {
 					$header.after('<div class="stspace"></div>');
 					$(".fix-space").css({
-						'height': $header.height() + 'px'
+						'height': $header.height() + '100px'
 					});
 				}
 				$header.addClass('is-sticky animated fadeIn');
