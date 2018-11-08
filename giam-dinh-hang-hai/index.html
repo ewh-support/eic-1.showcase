@@ -91,7 +91,22 @@
                 <div class="header-info-toggle">
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
-                <!doctype html>
+                <script src="/js/jquery.js"></script>
+                <script>
+                     
+                   jQuery(window).load(function() {
+                       jQuery('.choose').removeClass('active');
+                       jQuery('.choose').each(function() {
+                           var path = window.location.pathname.split("/"),
+                               href = jQuery(this).find('a').attr('href').split("/"),
+                               exactMatch = (path[1] === href[1]);
+                           if (exactMatch) {
+                               console.log(exactMatch);
+                               jQuery(this).addClass('active');
+                           }
+                       })
+                   });
+                </script>                <!doctype html>
 <html lang="en">
 
 
@@ -99,7 +114,7 @@
     <div class="header-top">
         <div class="row">
             <div class="col-sm-4 col-lg-3 hidden-xs hidden-sm" >
-                <div style="text-align:center" class="slogan">Công Ty Cổ Phần Giám Định Năng Lượng Việt Nam</div>
+                <div style="text-align:center" class="slogan">Công ty cổ phần giám định năng lượng Việt Nam</div>
             </div>
             <div class="col-lg-1 visible-lg"></div>
             <div class="col-sm-4 logo-wrap ">
@@ -279,36 +294,39 @@
 					<div class="col-md-8 col-lg-9">					
 						<h1 class="text-center decor color" style="font-size:38px">Giám Định  Hàng Hải</h1>
                         <div style="margin-top:-100px">
-                        <div style = "min-height: 500px;margin-top: 150px">
-    <div ><h4 class="gt-title">giới thiệu</h4><br>
-        <span class = "span">&nbsp;&nbsp;&nbsp;&nbsp;Việc x&aacute;c định t&agrave;u chở h&agrave;ng đủ điều kiện, khả năng chuy&ecirc;n chở h&agrave;ng h&oacute;a tr&ecirc;n s&ocirc;ng, biển l&agrave; điều kiện ti&ecirc;n quyết để bảo đảm an to&agrave;n cho cả con người v&agrave; t&agrave;i sản của doanh nghiệp. Để thực hiện lĩnh vực n&agrave;y, Gi&aacute;m định vi&ecirc;n phải sử dụng tất cả c&aacute;c phương ph&aacute;p gi&aacute;m định để đ&aacute;p ứng theo y&ecirc;u cầu của chủ t&agrave;u, Đại l&yacute;, người chuy&ecirc;n chở, doanh nghiệp&hellip;<br />
+                        <div>
+<div>
+<h4>giới thiệu</h4>
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Việc x&aacute;c định t&agrave;u chở h&agrave;ng đủ điều kiện, khả năng chuy&ecirc;n chở h&agrave;ng h&oacute;a tr&ecirc;n s&ocirc;ng, biển l&agrave; điều kiện ti&ecirc;n quyết để bảo đảm an to&agrave;n cho cả con người v&agrave; t&agrave;i sản của doanh nghiệp. Để thực hiện lĩnh vực n&agrave;y, Gi&aacute;m định vi&ecirc;n phải sử dụng tất cả c&aacute;c phương ph&aacute;p gi&aacute;m định để đ&aacute;p ứng theo y&ecirc;u cầu của chủ t&agrave;u, Đại l&yacute;, người chuy&ecirc;n chở, doanh nghiệp&hellip;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;Dịch vụ đ&aacute;nh gi&aacute; an to&agrave;n được thực hiện theo c&aacute;c chương tr&igrave;nh, quy định, điều khoản của quốc tế.<br />
-       &nbsp;&nbsp;&nbsp;&nbsp;Bằng đội ngũ gi&aacute;m định vi&ecirc;n c&oacute; tr&igrave;nh độ cao, chuy&ecirc;n nghiệp, c&oacute; bề d&agrave;y kinh nghiệm, am hiểu về lĩnh vực h&agrave;ng hải, EIC đ&atilde; tạo được uy t&iacute;n, được kh&aacute;ch h&agrave;ng đ&aacute;nh gi&aacute; cao trong nghiệp vụ gi&aacute;m định an to&agrave;n h&agrave;ng hải, gi&uacute;p kh&aacute;ch h&agrave;ng an t&acirc;m khi sử dụng dịch vụ.</div>
-       <br>
-    <div ><h4 class="gt-title">dịch vụ gi&aacute;m định</h4>
-        <ul class = "span1">
-          <li>Gi&aacute;m định sự ph&ugrave; hợp của t&agrave;u cho c&aacute;c mục đ&iacute;ch sử dụng</li>
+&nbsp;&nbsp;&nbsp;&nbsp;Bằng đội ngũ gi&aacute;m định vi&ecirc;n c&oacute; tr&igrave;nh độ cao, chuy&ecirc;n nghiệp, c&oacute; bề d&agrave;y kinh nghiệm, am hiểu về lĩnh vực h&agrave;ng hải, EIC đ&atilde; tạo được uy t&iacute;n, được kh&aacute;ch h&agrave;ng đ&aacute;nh gi&aacute; cao trong nghiệp vụ gi&aacute;m định an to&agrave;n h&agrave;ng hải, gi&uacute;p kh&aacute;ch h&agrave;ng an t&acirc;m khi sử dụng dịch vụ.</div>
+&nbsp;
+
+<div>
+<h4>dịch vụ gi&aacute;m định</h4>
+
+<ul>
+    <li>Gi&aacute;m định sự ph&ugrave; hợp của t&agrave;u cho c&aacute;c mục đ&iacute;ch sử dụng</li>
     <li>Gi&aacute;m định thu&ecirc;, trả t&agrave;u</li>
     <li>Gi&aacute;m định trước khi mua t&agrave;u</li>
     <li>Gi&aacute;m định t&igrave;nh trạng trước khi v&agrave;o hội P&amp;I</li>
     <li>Đ&aacute;nh gi&aacute; an to&agrave;n đối với c&aacute;c phương tiện nổi theo chương tr&igrave;nh IMCA v&agrave; OVID</li>
     <li>Đ&aacute;nh gi&aacute; rủi ro cho nh&agrave; m&aacute;y đ&oacute;ng t&agrave;u theo c&aacute;c điều khoản JH 143</li>
     <li>Gi&aacute;m định an to&agrave;n h&agrave;ng hải trong việc sắp xếp, vận chuyển v&agrave; lắp đặt c&aacute;c thiết bị, c&ocirc;ng tr&igrave;nh dầu kh&iacute; (Marine Warranty Survey).</li>
-        </ul>
-        <h4 class="gt-title">dự &aacute;n đ&atilde; thực hiện</h4>
-        <ul class = "span1">
-            <li>Biển Đ&ocirc;ng POC</li>
+</ul>
+
+<h4>dự &aacute;n đ&atilde; thực hiện</h4>
+
+<ul>
+    <li>Biển Đ&ocirc;ng POC</li>
     <li>Cửu Long JOC</li>
     <li>Ho&agrave;n Long Ho&agrave;n Vũ JOC</li>
     <li>PTSC POS</li>
     <li>PVEP POC</li>
-        </ul>
-    </div>
-
-
-
-
-<p></div></p>
+</ul>
+</div>
+</div>
 </div>
 				</div>
 			

@@ -91,7 +91,22 @@
                 <div class="header-info-toggle">
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
-                <!doctype html>
+                <script src="/js/jquery.js"></script>
+                <script>
+                     
+                   jQuery(window).load(function() {
+                       jQuery('.choose').removeClass('active');
+                       jQuery('.choose').each(function() {
+                           var path = window.location.pathname.split("/"),
+                               href = jQuery(this).find('a').attr('href').split("/"),
+                               exactMatch = (path[1] === href[1]);
+                           if (exactMatch) {
+                               console.log(exactMatch);
+                               jQuery(this).addClass('active');
+                           }
+                       })
+                   });
+                </script>                <!doctype html>
 <html lang="en">
 
 
@@ -99,7 +114,7 @@
     <div class="header-top">
         <div class="row">
             <div class="col-sm-4 col-lg-3 hidden-xs hidden-sm" >
-                <div style="text-align:center" class="slogan">Công Ty Cổ Phần Giám Định Năng Lượng Việt Nam</div>
+                <div style="text-align:center" class="slogan">Công ty cổ phần giám định năng lượng Việt Nam</div>
             </div>
             <div class="col-lg-1 visible-lg"></div>
             <div class="col-sm-4 logo-wrap ">
@@ -279,23 +294,31 @@
 					<div class="col-md-8 col-lg-9">					
 						<h1 class="text-center decor color" style="font-size:38px">Giám Định Tổn Thất Tài Sản Kỹ Thuật</h1>
                         <div style="margin-top:-100px">
-                        <div style = "min-height: 500px;margin-top: 150px">
-    <div ><h4 class="gt-title">giới thiệu</h4><br>
-        <span class = "span">&nbsp;&nbsp;&nbsp;&nbsp;Việc giám định tổn thất tài sản kỹ thuật giúp khách hàng xác định nguyên nhân và mức độ thiệt hại, đề nghị sửa chữa, thay thế và ước tính sửa chữa thay thế hoặc yêu cầu bồi thường bảo hiểm, bảo hành.
-        <br><br>    </div>
-    <div ><h4 class="gt-title">Giám định tài sản kỹ thuật (cháy, rủi ro, kỹ thuật và CTXD)</h4>
-        <ul class = "span1">
-            <li>Giám định chất lượng công trình xây dựng, nhà xưởng kho hàng</li>
-            <li>Đánh giá rủi ro và đề phòng biện pháp hạn chế rủi ro</li>
-            <li>Giám định tổn thất và phân bổ tổn thất.</li><br>        </ul>
-    </div>
-    <div >
-        <ul class = "span1"> 
-            <li>Kiểm tra đánh giá hệ thống phòng cháy hiện hữu trong các công trình xây dựng, nhà xưởng, kho tàng</li>
-            <li>Giám sát áp tải trong các khâu vận chuyển nhằm làm giảm thiểu các hao hụt trong quá trình vận chuyển</li>
-            <li>Giám định tình trạng và đề xuất các biện pháp cải thiện tình trạng hiện hữu để phòng tránh rủi ro.</li><br>        </ul>
-    </div>
-  </div></div>
+                        <div>
+<div>
+<h4>giới thiệu</h4>
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Việc gi&aacute;m định tổn thất t&agrave;i sản kỹ thuật gi&uacute;p kh&aacute;ch h&agrave;ng x&aacute;c định nguy&ecirc;n nh&acirc;n v&agrave; mức độ thiệt hại, đề nghị sửa chữa, thay thế v&agrave; ước t&iacute;nh sửa chữa thay thế hoặc y&ecirc;u cầu bồi thường bảo hiểm, bảo h&agrave;nh.</div>
+
+<div>
+<h4>Gi&aacute;m định t&agrave;i sản kỹ thuật (ch&aacute;y, rủi ro, kỹ thuật v&agrave; CTXD)</h4>
+
+<ul>
+    <li>Gi&aacute;m định chất lượng c&ocirc;ng tr&igrave;nh x&acirc;y dựng, nh&agrave; xưởng kho h&agrave;ng</li>
+    <li>Đ&aacute;nh gi&aacute; rủi ro v&agrave; đề ph&ograve;ng biện ph&aacute;p hạn chế rủi ro</li>
+    <li>Gi&aacute;m định tổn thất v&agrave; ph&acirc;n bổ tổn thất.</li>
+</ul>
+</div>
+
+<div>
+<ul>
+    <li>Kiểm tra đ&aacute;nh gi&aacute; hệ thống ph&ograve;ng ch&aacute;y hiện hữu trong c&aacute;c c&ocirc;ng tr&igrave;nh x&acirc;y dựng, nh&agrave; xưởng, kho t&agrave;ng</li>
+    <li>Gi&aacute;m s&aacute;t &aacute;p tải trong c&aacute;c kh&acirc;u vận chuyển nhằm l&agrave;m giảm thiểu c&aacute;c hao hụt trong qu&aacute; tr&igrave;nh vận chuyển</li>
+    <li>Gi&aacute;m định t&igrave;nh trạng v&agrave; đề xuất c&aacute;c biện ph&aacute;p cải thiện t&igrave;nh trạng hiện hữu để ph&ograve;ng tr&aacute;nh rủi ro.</li>
+</ul>
+</div>
+</div>
+</div>
 				</div>
 			
 			</div>

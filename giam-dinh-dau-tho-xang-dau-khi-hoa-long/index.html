@@ -91,7 +91,22 @@
                 <div class="header-info-toggle">
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
-                <!doctype html>
+                <script src="/js/jquery.js"></script>
+                <script>
+                     
+                   jQuery(window).load(function() {
+                       jQuery('.choose').removeClass('active');
+                       jQuery('.choose').each(function() {
+                           var path = window.location.pathname.split("/"),
+                               href = jQuery(this).find('a').attr('href').split("/"),
+                               exactMatch = (path[1] === href[1]);
+                           if (exactMatch) {
+                               console.log(exactMatch);
+                               jQuery(this).addClass('active');
+                           }
+                       })
+                   });
+                </script>                <!doctype html>
 <html lang="en">
 
 
@@ -99,7 +114,7 @@
     <div class="header-top">
         <div class="row">
             <div class="col-sm-4 col-lg-3 hidden-xs hidden-sm" >
-                <div style="text-align:center" class="slogan">Công Ty Cổ Phần Giám Định Năng Lượng Việt Nam</div>
+                <div style="text-align:center" class="slogan">Công ty cổ phần giám định năng lượng Việt Nam</div>
             </div>
             <div class="col-lg-1 visible-lg"></div>
             <div class="col-sm-4 logo-wrap ">
@@ -279,35 +294,46 @@
 					<div class="col-md-8 col-lg-9">					
 						<h1 class="text-center decor color" style="font-size:38px">Giám định Dầu thô, Xăng dầu, Khí hóa lỏng</h1>
                         <div style="margin-top:-100px">
-                        <div style = "min-height: 500px;margin-top: 150px;">
-    <div style="text-align:justify"><h4 class="gt-title">giới thiệu</h4>
-        <span class = "span"><br>&nbsp;&nbsp;&nbsp;&nbsp;Sử dụng dịch vụ giám định chuyên nghiệp giúp khách hàng giám sát chủ động trong hao hụt hàng hóá trong quá trình vận chuyển, ngăn ngừa tổn thất, đảm bảo chất lượng từ cảng dỡ đến cảng xếp,… Bên cạnh đó, việc giám định khối lượng, qui cách, phẩm chất cũng có ý nghĩa quan trọng để chứng minh một cách khách quan việc thực hiện nghĩa vụ của người bán, người cung cấp hàng, người sản xuất theo cam kết đã ghi trong Hợp đồng hoặc L/C. Kết quả giám định còn làm cơ sở để thông quan hàng hóa xuất nhập khẩu.<br>
-        <span class = "span">&nbsp;&nbsp;&nbsp;&nbsp;Dịch vụ giám định của EIC với nguồn nhân lực chuyên sâu, có kinh nghiệm về giám định khối lượng, chất lượng dầu mỏ và các sản phẩm dầu mỏ tại hầu hết các kho cảng, khu vực kinh tế trọng điểm từ Bắc vào Nam sẽ giúp khách hàng bảo vệ được lợi ích tài chính của mình trong giao nhận hàng hóa, lưu trữ, chuyên chở và các hoạt động kinh doanh khác một cách kịp thời, nhanh chóng và hiệu quả. Sản phẩm của dịch vụ EIC đáp ứng các yêu cầu của khách hàng theo quy định trong nước và quốc tế.</span> 
-    </div>
-    <br>
-    <div><h4 class="gt-title">các dịch vụ chính</h4>
-        <ul class = "span1">
-            <li>Xuất nhập tại Kho và bồn nổi</li>
-            <li>Giám định dầu Nhiên liệu ngoài khơi</li>
-            <li>Chuyển tải</li>
-            <li>Xây dựng định mức hao hụt</li>
-            <li>Giám sát áp tải trong các khâu vận chuyển nhằm làm giảm thiểu các hao hụt trong quá trình vận chuyển</li>
-            <li>Kiểm kê hàng hóá định kỳ; Pha trộn sản phẩm Dầu mỏ</li>
-            <li>Tư vấn và xây dựng định mức hao hụt trong quá trình giao nhận hàng</li>
-            <li>Kiểm tra sạch sẽ hầm hàng.</li>
-        </ul>
-    </div>
-    <div><h4 class="gt-title">khách hàng</h4>
-        <ul class = "span1">
-            <li>Khách hàng nước ngoài: BP, Chevron, Phillips 66, SK Energy, Taiyo Oil, Idemitsu, Mitsui…</li>
-            <li>Khách hàng trong nước: BSR, PV OIL, PETROLIMEX, PV GAS, SAIGON PETRO, PETEC, PETIMEX, TOTAL, MIPECO, THALEXIM, PETROMEKONG…</li> 
-        </ul>
-        <h4 class="gt-title">chứng nhận</h4>
-        <ul class = "span1">
-            <li>Chứng nhận hệ thống quản lý chất lượng về cung cấp dịch vụ Giám định Thương mại ISO 9000</li>
-            <li>Chứng chỉ công nhận đủ năng lực giám định phù hợp với các yêu cầu của tiêu chuẩn – ISO 17020: 2012</li> 
-        </ul>
-    </div></div>
+                        <div>
+<div style="text-align:justify">
+<h4>giới thiệu</h4>
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Sử dụng dịch vụ gi&aacute;m định chuy&ecirc;n nghiệp gi&uacute;p kh&aacute;ch h&agrave;ng gi&aacute;m s&aacute;t chủ đ&ocirc;̣ng trong hao hụt h&agrave;ng h&oacute;á trong qu&aacute; tr&igrave;nh vận chuyển, ngăn ngừa tổn thất, đảm bảo chất lượng từ cảng dỡ đến cảng xếp,&hellip; B&ecirc;n cạnh đ&oacute;, việc gi&aacute;m định khối lượng, qui c&aacute;ch, phẩm chất cũng c&oacute; &yacute; nghĩa quan trọng để chứng minh một c&aacute;ch kh&aacute;ch quan việc thực hiện nghĩa vụ của người b&aacute;n, người cung cấp h&agrave;ng, người sản xuất theo cam kết đ&atilde; ghi trong Hợp đồng hoặc L/C. Kết quả gi&aacute;m định c&ograve;n l&agrave;m cơ sở để th&ocirc;ng quan h&agrave;ng h&oacute;a xuất nh&acirc;̣p khẩu.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Dịch vụ gi&aacute;m định của EIC với nguồn nh&acirc;n lực chuy&ecirc;n s&acirc;u, c&oacute; kinh nghiệm về gi&aacute;m định khối lượng, chất lượng dầu mỏ v&agrave; c&aacute;c sản phẩm dầu mỏ tại hầu hết c&aacute;c kho cảng, khu vực kinh tế trọng điểm từ Bắc v&agrave;o Nam sẽ gi&uacute;p kh&aacute;ch h&agrave;ng bảo vệ được lợi &iacute;ch t&agrave;i ch&iacute;nh của m&igrave;nh trong giao nhận h&agrave;ng h&oacute;a, lưu trữ, chuy&ecirc;n chở v&agrave; c&aacute;c hoạt động kinh doanh kh&aacute;c một c&aacute;ch kịp thời, nhanh ch&oacute;ng v&agrave; hiệu quả. Sản phẩm của dịch vụ EIC đ&aacute;p ứng c&aacute;c y&ecirc;u cầu của kh&aacute;ch h&agrave;ng theo quy định trong nước v&agrave; quốc tế.</div>
+&nbsp;
+
+<div>
+<h4>c&aacute;c dịch vụ ch&iacute;nh</h4>
+
+<ul>
+    <li>Xuất nhập tại Kho v&agrave; bồn nổi</li>
+    <li>Gi&aacute;m định dầu Nhi&ecirc;n liệu ngo&agrave;i khơi</li>
+    <li>Chuyển tải</li>
+    <li>X&acirc;y dựng định mức hao hụt</li>
+    <li>Gi&aacute;m s&aacute;t &aacute;p tải trong c&aacute;c kh&acirc;u vận chuyển nhằm l&agrave;m giảm thiểu c&aacute;c hao hụt trong qu&aacute; tr&igrave;nh vận chuyển</li>
+    <li>Kiểm k&ecirc; h&agrave;ng h&oacute;á định kỳ; Pha trộn sản phẩm Dầu mỏ</li>
+    <li>Tư vấn v&agrave; x&acirc;y dựng định mức hao hụt trong qu&aacute; tr&igrave;nh giao nhận h&agrave;ng</li>
+    <li>Kiểm tra sạch sẽ hầm h&agrave;ng.</li>
+</ul>
+</div>
+
+<div>
+<h4>kh&aacute;ch h&agrave;ng</h4>
+
+<ul>
+    <li>Kh&aacute;ch h&agrave;ng nước ngo&agrave;i: BP, Chevron, Phillips 66, SK Energy, Taiyo Oil, Idemitsu, Mitsui…</li>
+    <li>Kh&aacute;ch h&agrave;ng trong nước: BSR, PV OIL, PETROLIMEX, PV GAS, SAIGON PETRO, PETEC, PETIMEX, TOTAL, MIPECO, THALEXIM, PETROMEKONG&hellip;</li>
+</ul>
+
+<h4>chứng nhận</h4>
+
+<ul>
+    <li>Chứng nhận hệ thống quản l&yacute; chất lượng về cung cấp dịch vụ Gi&aacute;m định Thương mại ISO 9000</li>
+    <li>Chứng chỉ c&ocirc;ng nhận đủ năng lực gi&aacute;m định ph&ugrave; hợp với c&aacute;c y&ecirc;u cầu của ti&ecirc;u chuẩn &ndash; ISO 17020: 2012</li>
+</ul>
+</div>
+</div>
+</div>
 				</div>
 			
 			</div>

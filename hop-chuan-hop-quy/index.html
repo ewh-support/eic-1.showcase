@@ -91,7 +91,22 @@
                 <div class="header-info-toggle">
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
-                <!doctype html>
+                <script src="/js/jquery.js"></script>
+                <script>
+                     
+                   jQuery(window).load(function() {
+                       jQuery('.choose').removeClass('active');
+                       jQuery('.choose').each(function() {
+                           var path = window.location.pathname.split("/"),
+                               href = jQuery(this).find('a').attr('href').split("/"),
+                               exactMatch = (path[1] === href[1]);
+                           if (exactMatch) {
+                               console.log(exactMatch);
+                               jQuery(this).addClass('active');
+                           }
+                       })
+                   });
+                </script>                <!doctype html>
 <html lang="en">
 
 
@@ -99,7 +114,7 @@
     <div class="header-top">
         <div class="row">
             <div class="col-sm-4 col-lg-3 hidden-xs hidden-sm" >
-                <div style="text-align:center" class="slogan">Công Ty Cổ Phần Giám Định Năng Lượng Việt Nam</div>
+                <div style="text-align:center" class="slogan">Công ty cổ phần giám định năng lượng Việt Nam</div>
             </div>
             <div class="col-lg-1 visible-lg"></div>
             <div class="col-sm-4 logo-wrap ">
@@ -279,17 +294,17 @@
 					<div class="col-md-8 col-lg-9">					
 						<h1 class="text-center decor color" style="font-size:38px">hợp chuẩn hợp quy</h1>
                         <div style="margin-top:-100px">
-                        <div style = "min-height: 500px;margin-top: 150px">
-    <div ><h4 class="gt-title">giới thiệu</h4><br>
-        <span class = "span">&nbsp;&nbsp;&nbsp;&nbsp;  Để khẳng định chắc chắn và đáng tin cậy về chất lượng cũng như an toàn của một sản phẩm tới người tiêu dùng, nhà sản xuất ngoài việc tự khẳng định thông qua quảng cáo trên nhãn các sản phẩm họ còn phải thông qua một bên độc lập để chứng minh về sản phẩm của mình giúp khách hàng yên tâm sử dụng. EIC tự hào là đơn vị liên danh với Trung tâm chứng nhận phù hợp – QUACERT, cùng hợp tác phát triển hoạt động kinh doanh phù hợp với lợi ích của các bên.
-        <br><br>    </div>
-    <div >
-         <span class = "span">&nbsp;&nbsp;&nbsp;&nbsp;    Việc chứng nhận một sản phẩm đạt chuẩn được thực hiện theo chuẩn mực quốc tế với phương pháp, thủ tục rõ ràng sẽ là một sự đảm bảo tin cậy cho người tiêu dùng về chất lượng và sự an toàn của sản phẩm. Người tiêu dùng có thể nhận biết điều này thông qua dấu hiệu chứng nhận và dấu chất lượng Việt Nam do QUACERT cấp gắn trên sản phẩm được chứng nhận.
-        <br><br>    </div>
-    <div >
-        <span class = "span">&nbsp;&nbsp;&nbsp;&nbsp;      Tiêu chuẩn sử dụng để chứng nhận có thể là tiêu chuẩn quốc gia Việt Nam (TCVN), tiêu chuẩn nước ngoài (như JIS của Nhật, BS của Anh, ASTM của Mỹ, GB của Trung Quốc…) hay các tiêu chuẩn quốc tế (ISO, IEC…). Điều này tạo thuận lợi cho các nhà sản xuất trong việc xuất khẩu sản phẩm của mình tới nhiều nước và khu vực khác nhau.
-        <br><br>    </div>
-  </div></div>
+                        <div>
+<div>
+<h4>giới thiệu</h4>
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp; Để khẳng định chắc chắn v&agrave; đ&aacute;ng tin cậy về chất lượng cũng như an to&agrave;n của một sản phẩm tới người ti&ecirc;u d&ugrave;ng, nh&agrave; sản xuất ngo&agrave;i việc tự khẳng định th&ocirc;ng qua quảng c&aacute;o tr&ecirc;n nh&atilde;n c&aacute;c sản phẩm họ c&ograve;n phải th&ocirc;ng qua một b&ecirc;n độc lập để chứng minh về sản phẩm của m&igrave;nh gi&uacute;p kh&aacute;ch h&agrave;ng y&ecirc;n t&acirc;m sử dụng. EIC tự h&agrave;o l&agrave; đơn vị li&ecirc;n danh với Trung t&acirc;m chứng nhận ph&ugrave; hợp &ndash; QUACERT, c&ugrave;ng hợp t&aacute;c ph&aacute;t triển hoạt động kinh doanh ph&ugrave; hợp với lợi &iacute;ch của c&aacute;c b&ecirc;n.</div>
+
+<div>&nbsp;&nbsp;&nbsp;&nbsp; Việc chứng nhận một sản phẩm đạt chuẩn được thực hiện theo chuẩn mực quốc tế với phương ph&aacute;p, thủ tục r&otilde; r&agrave;ng sẽ l&agrave; một sự đảm bảo tin cậy cho người ti&ecirc;u d&ugrave;ng về chất lượng v&agrave; sự an to&agrave;n của sản phẩm. Người ti&ecirc;u d&ugrave;ng c&oacute; thể nhận biết điều n&agrave;y th&ocirc;ng qua dấu hiệu chứng nhận v&agrave; dấu chất lượng Việt Nam do QUACERT cấp gắn tr&ecirc;n sản phẩm được chứng nhận.</div>
+
+<div>&nbsp;&nbsp;&nbsp;&nbsp; Ti&ecirc;u chuẩn sử dụng để chứng nhận c&oacute; thể l&agrave; ti&ecirc;u chuẩn quốc gia Việt Nam (TCVN), ti&ecirc;u chuẩn nước ngo&agrave;i (như JIS của Nhật, BS của Anh, ASTM của Mỹ, GB của Trung Quốc…) hay c&aacute;c ti&ecirc;u chuẩn quốc tế (ISO, IEC…). Điều n&agrave;y tạo thuận lợi cho c&aacute;c nh&agrave; sản xuất trong việc xuất khẩu sản phẩm của m&igrave;nh tới nhiều nước v&agrave; khu vực kh&aacute;c nhau.</div>
+</div>
+</div>
 				</div>
 			
 			</div>

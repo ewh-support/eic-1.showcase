@@ -91,7 +91,22 @@
                 <div class="header-info-toggle">
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
-                <!doctype html>
+                <script src="/js/jquery.js"></script>
+                <script>
+                     
+                   jQuery(window).load(function() {
+                       jQuery('.choose').removeClass('active');
+                       jQuery('.choose').each(function() {
+                           var path = window.location.pathname.split("/"),
+                               href = jQuery(this).find('a').attr('href').split("/"),
+                               exactMatch = (path[1] === href[1]);
+                           if (exactMatch) {
+                               console.log(exactMatch);
+                               jQuery(this).addClass('active');
+                           }
+                       })
+                   });
+                </script>                <!doctype html>
 <html lang="en">
 
 
@@ -99,7 +114,7 @@
     <div class="header-top">
         <div class="row">
             <div class="col-sm-4 col-lg-3 hidden-xs hidden-sm" >
-                <div style="text-align:center" class="slogan">Công Ty Cổ Phần Giám Định Năng Lượng Việt Nam</div>
+                <div style="text-align:center" class="slogan">Công ty cổ phần giám định năng lượng Việt Nam</div>
             </div>
             <div class="col-lg-1 visible-lg"></div>
             <div class="col-sm-4 logo-wrap ">
@@ -279,62 +294,99 @@
 					<div class="col-md-8 col-lg-9">					
 						<h1 class="text-center decor color" style="font-size:38px">Hiệu chuẩn  Tàu, Sà lan</h1>
                         <div style="margin-top:-100px">
-                        <p><br>
-<br>
-<br>
-<br></p>
-<p><div><h4 class="text-banner">Kiểm kê, xác định khối lượng đống hàng rời</h4></div></p>
-<p><div><h4 class="gt-head">HIỆU CHUẨN tàu, sà lan</h4></div>
- <div >
-    <h4 class="gt-title">giới thiệu</h4>
-         <p>Áp dụng phương pháp mà các nước tiến tiến trên thế giới hiện nay đang áp dụng, EIC sử dụng máy Toàn đạc điện tử Leica TCRA1200 R1000 để đo đạt số liệu, xây dựng không gian ba chiều của các hầm hàng, Mô phỏng hình ảnh 3D của các hầm hàng với kích thước thực tế, Dùng phần mềm chuyên dụng để xử lý số liệu giúp cho việc xây dựng được bảng tra thể tích có kết quả chính xác nhất hiện nay.</p>
+                        <p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div>
+<h4>Kiểm k&ecirc;, x&aacute;c định khối lượng đống h&agrave;ng rời</h4>
+</div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div>
+<h4>HIỆU CHUẨN t&agrave;u, s&agrave; lan</h4>
+</div>
+
+<div>
+<h4>giới thiệu</h4>
+
+<p>&Aacute;p dụng phương ph&aacute;p m&agrave; c&aacute;c nước ti&ecirc;́n tiến tr&ecirc;n thế giới hiện nay đang &aacute;p dụng, EIC sử dụng m&aacute;y To&agrave;n đạc điện tử Leica TCRA1200 R1000 để đo đạt số liệu, x&acirc;y dựng kh&ocirc;ng gian ba chiều của c&aacute;c hầm h&agrave;ng, M&ocirc; phỏng h&igrave;nh ảnh 3D của c&aacute;c hầm h&agrave;ng với k&iacute;ch thước thực tế, D&ugrave;ng phần mềm chuy&ecirc;n dụng để xử l&yacute; số liệu gi&uacute;p cho việc x&acirc;y dựng được bảng tra thể t&iacute;ch c&oacute; kết quả ch&iacute;nh x&aacute;c nhất hiện nay.</p>
 </div>
 <!-- //end  col 1 -->
- <div >
-    <h4 class="gt-title">ưu điểm</h4>
-    <ul>
-        <li>Thời gian thực hiện nhanh chóng và không tốn nhiều chi phí cho công việc đo đạc</li>
-        <li>Số liệu chuẩn xác so với các phương pháp cổ điển</li>
-        <li>Tra cứu số liệu linh động trên website</li>
-        <li>Sử dụng phần mềm để xử lý số liệu</li>
-        <li>Áp dụng theo tiêu chuẩn quốc tế phù hợp với quy định hiện hành</li>
-    </ul>
+
+<div>
+<h4>ưu điểm</h4>
+
+<ul>
+    <li>Thời gian thực hiện nhanh ch&oacute;ng v&agrave; kh&ocirc;ng tốn nhiều chi ph&iacute; cho c&ocirc;ng việc đo đạc</li>
+    <li>Số liệu chuẩn x&aacute;c so với c&aacute;c phương ph&aacute;p cổ điển</li>
+    <li>Tra cứu số liệu linh động tr&ecirc;n website</li>
+    <li>Sử dụng phần mềm để xử l&yacute; số liệu</li>
+    <li>&Aacute;p dụng theo ti&ecirc;u chuẩn quốc tế ph&ugrave; hợp với quy định hiện h&agrave;nh</li>
+</ul>
 </div>
 <!-- //end  col 2 -->
- <div >
-    <h4 class="gt-title">Dịch vụ cung cấp</h4>
-    <p><b>EIC</b> tự hào là đơn vị sử dụng phương pháp này đầu tiên tại Việt Nam và đã cung cấp dịch vụ cho khách hàng tại Việt Nam.</p>
-    <ul>
-        <li>Kiểm định, hiệu chuẩn các Tàu chứa Dầu</li>
-        <li>Kiểm định, hiệu chuẩn các Sà lan</li><br>    </ul>
+
+<div>
+<h4>Dịch vụ cung cấp</h4>
+
+<p><strong>EIC</strong> tự h&agrave;o l&agrave; đơn vị sử dụng phương ph&aacute;p n&agrave;y đầu ti&ecirc;n tại Việt Nam v&agrave; đ&atilde; cung c&acirc;́p dịch vụ cho kh&aacute;ch h&agrave;ng tại Vi&ecirc;̣t Nam.</p>
+
+<ul>
+    <li>Kiểm định, hiệu chuẩn c&aacute;c T&agrave;u chứa Dầu</li>
+    <li>Kiểm định, hiệu chuẩn c&aacute;c S&agrave; lan</li>
+</ul>
 </div>
-<!-- //end  col 3 --></p>
-<p><div class="clearfix"></div></p>
-<p><div><h4 class="gt-head">xác định khối lượng đống hàng rời</h4></div>
- <div >
-    <h4 class="gt-title">giới thiệu</h4>
-         <p>Đo đạc số liệu và xây dựng không gian 3 chiều bề mặt đống hàng bằng máy Toàn đạc điện tử Leica TCRA1200 R1000, Dựng hình 3D phù hợp với hình ảnh thực tế của đống hàng, Dùng phần mềm chuyên dụng để xử lý số liệu giúp xác định khối lượng đống hàng rời nhanh chóng và đạt kết quả chính xác cao.</p>
+<!-- //end  col 3 -->
+
+<div>&nbsp;</div>
+
+<div>
+<h4>x&aacute;c định khối lượng đống h&agrave;ng rời</h4>
+</div>
+
+<p><div></p>
+<h4>giới thiệu</h4>
+
+<p>Đo đạc số liệu v&agrave; x&acirc;y dựng kh&ocirc;ng gian 3 chiều bề mặt đống h&agrave;ng bằng m&aacute;y To&agrave;n đạc điện tử Leica TCRA1200 R1000, Dựng h&igrave;nh 3D ph&ugrave; hợp với h&igrave;nh ảnh thực tế của đống h&agrave;ng, D&ugrave;ng phần mềm chuy&ecirc;n dụng để xử l&yacute; số liệu gi&uacute;p x&aacute;c định khối lượng đống h&agrave;ng rời nhanh ch&oacute;ng v&agrave; đạt kết quả ch&iacute;nh x&aacute;c cao.</p>
 </div>
 <!-- //end  col 1 -->
- <div >
-    <h4 class="gt-title">ưu điểm</h4>
-    <ul>
-        <li>Không tốn chi phí cho việc san bằng đống hàng rời theo phương pháp cổ điển</li>
-        <li>Hình ảnh 3D được mô phỏng chính xác theo số đo thực tế </li>
-        <li>Sử dụng phần mềm để xử lý số liệu cho kết quả nhanh</li>
-        <li>Thời gian cung cấp chứng thư nhanh chóng và kịp thời</li>
-    </ul>
+
+<div>
+<h4>ưu điểm</h4>
+
+<ul>
+    <li>Kh&ocirc;ng tốn chi ph&iacute; cho việc san bằng đống h&agrave;ng rời theo phương ph&aacute;p cổ điển</li>
+    <li>H&igrave;nh ảnh 3D được m&ocirc; phỏng ch&iacute;nh x&aacute;c theo số đo thực tế</li>
+    <li>Sử dụng phần mềm để xử l&yacute; số liệu cho kết quả nhanh</li>
+    <li>Thời gian cung cấp chứng thư nhanh ch&oacute;ng v&agrave; kịp thời</li>
+</ul>
 </div>
 <!-- //end  col 2 -->
- <div >
-    <h4 class="gt-title">Dịch vụ cung cấp</h4>
-    <p><b>EIC</b> tự hào là đơn vị sử dụng phương pháp này đầu tiên tại Việt Nam và đã cung cấp dịch vụ cho khách hàng tại Việt Nam.</p>
-    <ul>
-        <li>Xi măng</li>
-        <li>Than</li><br>        <li>Cliker</li> 
-        <li>Quặng</li> 
-        <li>…</li> 
-    </ul>
+
+<div>
+<h4>Dịch vụ cung cấp</h4>
+
+<p><strong>EIC</strong> tự h&agrave;o l&agrave; đơn vị sử dụng phương ph&aacute;p n&agrave;y đầu ti&ecirc;n tại Việt Nam v&agrave; đ&atilde; cung c&acirc;́p dịch vụ cho kh&aacute;ch h&agrave;ng tại Vi&ecirc;̣t Nam.</p>
+
+<p><ul>
+    <li>Xi măng</li>
+    <li>Than</li>
+    <li>Cliker</li>
+    <li>Quặng</li>
+    <li>…</li>
+</ul>
 </div>
 <!-- //end  col 3 --></p>
 </div>

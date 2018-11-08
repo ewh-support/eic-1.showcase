@@ -91,7 +91,22 @@
                 <div class="header-info-toggle">
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
-                <!doctype html>
+                <script src="/js/jquery.js"></script>
+                <script>
+                     
+                   jQuery(window).load(function() {
+                       jQuery('.choose').removeClass('active');
+                       jQuery('.choose').each(function() {
+                           var path = window.location.pathname.split("/"),
+                               href = jQuery(this).find('a').attr('href').split("/"),
+                               exactMatch = (path[1] === href[1]);
+                           if (exactMatch) {
+                               console.log(exactMatch);
+                               jQuery(this).addClass('active');
+                           }
+                       })
+                   });
+                </script>                <!doctype html>
 <html lang="en">
 
 
@@ -99,7 +114,7 @@
     <div class="header-top">
         <div class="row">
             <div class="col-sm-4 col-lg-3 hidden-xs hidden-sm" >
-                <div style="text-align:center" class="slogan">Công Ty Cổ Phần Giám Định Năng Lượng Việt Nam</div>
+                <div style="text-align:center" class="slogan">Công ty cổ phần giám định năng lượng Việt Nam</div>
             </div>
             <div class="col-lg-1 visible-lg"></div>
             <div class="col-sm-4 logo-wrap ">
@@ -279,7 +294,62 @@
 					<div class="col-md-8 col-lg-9">					
 						<h1 class="text-center decor color" style="font-size:38px">Phân Tích Thử Nghiệm Phục Vụ Hợp Chuẩn Hợp Quy</h1>
                         <div style="margin-top:-100px">
-                        </div>
+                        <p><div >
+<br>
+<br>
+<br>
+<br>
+    <h4 class="gt-title">Giới thiệu</h4>
+    <p>Chất lượng sản phẩm luôn là mối quan tâm hàng đầu của Doanh nghiệp khi giao thương, mua bán. Và việc xác định quy cách, chất lượng, an toàn hàng hóa theo các điều kiện và điều khoản của hợp đồng mua bán, chuyên chở và các qui định quản lý của nhà nước về Hàng hóá phân tích, thử nghiệm là yếu tố cần thiết để giảm rủi ro và chi phí cho doanh nghiệp.</p>
+    <p>Dịch vụ phân tích, thử nghiệm của EIC được công nhận và cấp phép dựa trên năng lực và tuân thủ các quy định của nhà nước hiện hành.</p>
+    <p>Các trang thiết bị, phân tích được chú trọng đầu tư, nhập khẩu từ các nước tiên tiến đảm bảo tính chính xác và đáp ứng nhu cầu cấp thiết của khách hàng.</p>
+</div>
+<!-- //end  col 1 --></p>
+<p><div >
+    <h4 class="gt-title">Hàng hóa phân tích</h4><br>    <p class="list-title">Nhóm hàng năng lượng:</p>
+    <ul>
+        <li>Dầu Thô</li>
+        <li>Xăng các loại</li>
+        <li>Nhiên liệu động cơ Diesel Oil</li>
+        <li>Dầu nhiên liệu Fuel Oil</li>
+        <li>LPG, LNG, Natural Gas</li>
+        <li>Kerosen</li>
+        <li>Nhiên liệu máy bay</li>
+        <li>Các sản phẩm dầu khí khác</li>
+    </ul>
+     <p class="list-title">Nhóm hàng khoáng sản:</p>
+    <ul>
+        <li>Quặng</li>
+        <li>Than, cốc và ăngtraxít</li>
+        <li>Và các sản phẩm khác</li>
+    </ul>
+     <p class="list-title">Nhóm hàng vật liệu xây dựng:</p>
+    <ul>
+        <li>Thép sản xuất trong nước và thép nhập khẩu</li>
+        <li>Thép phế liệu</li>
+        <li>Xi măng, đá vôi, clinker</li>
+    </ul>
+     <p class="list-title">Nhóm hàng khác:</p>
+    <ul>
+        <li>Dăm Gỗ</li>
+        <li>Viên Trấu</li><br>    </ul>
+     <p class="list-title">Và các loại hàng hóa khác…</p>
+</div>
+<!-- //end  col 2 --></p>
+<p><div >
+    <h4 class="gt-title">Năng lực pháp lý</h4>
+     <ul>
+        <li>Chứng chỉ công nhận đã được đánh giá và phù hợp với các yêu cầu của ISO/IEC 17025:2005 – VILAS 483</li>
+        <li>Quyết định chỉ định tổ chức đánh giá sự phù hợp đối với việc thử nghiệm Xăng, nhiên liệu Diesel &amp; nhiên liệu sinh học gốc, Khí dầu mỏ hóá lỏng (LPG)</li>
+        <li>Chứng nhận đăng ký lĩnh vực hoạt động thử nghiệm đối với các lĩnh vực:
+             <ul class="child">
+                <li>Xăng, nhiên liệu Diesel, nhiên liệu sinh học, Khí dầu mỏ hóá lỏng (LPG), vật liệu xây dựng, cấu kiện xây dựng, vật liệu trang trí ngoại thất, các thiết bị điện công nghiệp, Than</li>
+                <li>Thử nghiệm không phá hủy (NDT) bằng phương pháp tia X, tia gamma, siêu âm, bột từ…</li><br>            </ul>
+        </li>
+    </ul></p>
+<p></div>
+<!-- //end  col 3 --></p>
+</div>
 				</div>
 			
 			</div>

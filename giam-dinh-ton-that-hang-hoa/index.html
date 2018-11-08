@@ -91,7 +91,22 @@
                 <div class="header-info-toggle">
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
-                <!doctype html>
+                <script src="/js/jquery.js"></script>
+                <script>
+                     
+                   jQuery(window).load(function() {
+                       jQuery('.choose').removeClass('active');
+                       jQuery('.choose').each(function() {
+                           var path = window.location.pathname.split("/"),
+                               href = jQuery(this).find('a').attr('href').split("/"),
+                               exactMatch = (path[1] === href[1]);
+                           if (exactMatch) {
+                               console.log(exactMatch);
+                               jQuery(this).addClass('active');
+                           }
+                       })
+                   });
+                </script>                <!doctype html>
 <html lang="en">
 
 
@@ -99,7 +114,7 @@
     <div class="header-top">
         <div class="row">
             <div class="col-sm-4 col-lg-3 hidden-xs hidden-sm" >
-                <div style="text-align:center" class="slogan">Công Ty Cổ Phần Giám Định Năng Lượng Việt Nam</div>
+                <div style="text-align:center" class="slogan">Công ty cổ phần giám định năng lượng Việt Nam</div>
             </div>
             <div class="col-lg-1 visible-lg"></div>
             <div class="col-sm-4 logo-wrap ">
@@ -279,54 +294,70 @@
 					<div class="col-md-8 col-lg-9">					
 						<h1 class="text-center decor color" style="font-size:38px">Giám Định Tổn Thất Hàng Hóa</h1>
                         <div style="margin-top:-100px">
-                        <p><div >
- <br>
-    <br> 
-     <br>
-    <br> 
-    <br>
-    <h4 class="gt-title">Tổn thất hàng hóa</h4>
-    <ul>
-        <li>Hàng hoá tổn thất trong quá trình xếp dỡ hàng</li>
-        <li>Hàng hoá tổn thất trong quá trình vận chuyển</li>
-        <li>Hàng hoá tổn thất trong quá trình phân phối</li>
-        <li>Và các loại tổn thất hàng hoá khác</li><br>    </ul>
-    <h4 class="gt-title">Tổn thất tài sản</h4><br>     <ul>
-        <li>Xây dựng dân dụng</li>
-        <li>Hỏa hoạn, rủi ro kỹ thuật</li>
-        <li>Mọi rủi ro về tài sản, kỹ thuật</li>
-        <li>Đổ vỡ, hư hỏng máy móc thiết bị </li>
-        <li>Trách nhiệm bên thứ ba</li>
-        <li>Hàng hoá trong quá trình vận chuyển</li>
-        <li>Tổn thất do mất trộm mất cắp</li>
-        <li>Mất lợi nhuận do thiệt hại của tài sản</li>
-        <li>Và các loại thiệt hại về trách nhiệm pháp lý và tài sản khác…</li>
-    </ul><br></div>
-<!-- //end  col 1 --></p>
-<p><div ><br>    <h4 class="gt-title">giám định chính sách bảo hiểm</h4>
-    <ul>
-        <li>Tư vấn pháp luật, công ty bảo hiểm và trách nhiệm được bảo hiểm</li>
-        <li>Xác định và tính toán về các tổn thất thực tế</li>
-        <li>Điều tra về nguyên nhân của sự mất mát, tính chất và mức độ thiệt hại</li>
-        <li>Xem xét các chi phí hợp lý cho các hành động khắc phục</li><br>    </ul><br>    <h4 class="gt-title">ĐÁNH GIÁ RỦI RO, QUẢN LÝ TỔN THẤT</h4>
-    <ul>
-        <li>Đánh giá rủi ro và đề xuất hành động khắc phục</li>
-        <li>Phân tích và đánh giá rủi ro và mức độ an toàn</li> 
-        <li>Đánh giá rủi ro đối với hệ thống phòng cháy và an toàn cháy nổ tại nhà máy đóng tàu, các tòa nhà, nhà máy, kho hàng.</li>
-        <li>Giám định điều kiện trước khi đưa vào vận hành</li>
-        <li>Giám định đề phòng hạn chế tổn thất tài sản đối với các rủi ro về chính sách.</li><br>    </ul>
+                        <p><div><br />
+<br />
+<br />
+<br />
+&nbsp;</p>
+<h4>Tổn thất h&agrave;ng h&oacute;a</h4>
+
+<ul>
+    <li>H&agrave;ng ho&aacute; tổn thất trong qu&aacute; tr&igrave;nh xếp dỡ h&agrave;ng</li>
+    <li>H&agrave;ng ho&aacute; tổn thất trong qu&aacute; tr&igrave;nh vận chuyển</li>
+    <li>H&agrave;ng ho&aacute; tổn thất trong qu&aacute; tr&igrave;nh ph&acirc;n phối</li>
+    <li>V&agrave; c&aacute;c loại tổn thất h&agrave;ng ho&aacute; kh&aacute;c</li>
+</ul>
+
+<h4>Tổn thất t&agrave;i sản</h4>
+
+<ul>
+    <li>X&acirc;y dựng d&acirc;n dụng</li>
+    <li>Hỏa hoạn, rủi ro kỹ thuật</li>
+    <li>Mọi rủi ro về t&agrave;i sản, kỹ thuật</li>
+    <li>Đổ vỡ, hư hỏng m&aacute;y m&oacute;c thiết bị</li>
+    <li>Tr&aacute;ch nhiệm b&ecirc;n thứ ba</li>
+    <li>H&agrave;ng ho&aacute; trong qu&aacute; tr&igrave;nh vận chuyển</li>
+    <li>Tổn thất do mất trộm mất cắp</li>
+    <li>Mất lợi nhuận do thiệt hại của t&agrave;i sản</li>
+    <li>V&agrave; c&aacute;c loại thiệt hại về tr&aacute;ch nhiệm ph&aacute;p l&yacute; v&agrave; t&agrave;i sản kh&aacute;c&hellip;</li>
+</ul>
+</div>
+<!-- //end  col 1 -->
+
+<div>
+<h4>gi&aacute;m định ch&iacute;nh s&aacute;ch bảo hiểm</h4>
+
+<ul>
+    <li>Tư vấn ph&aacute;p luật, c&ocirc;ng ty bảo hiểm v&agrave; tr&aacute;ch nhiệm được bảo hiểm</li>
+    <li>X&aacute;c định v&agrave; t&iacute;nh to&aacute;n về c&aacute;c tổn thất thực tế</li>
+    <li>Điều tra về nguy&ecirc;n nh&acirc;n của sự mất m&aacute;t, t&iacute;nh chất v&agrave; mức độ thiệt hại</li>
+    <li>Xem x&eacute;t c&aacute;c chi ph&iacute; hợp l&yacute; cho c&aacute;c h&agrave;nh động khắc phục</li>
+</ul>
+
+<h4>Đ&Aacute;NH GI&Aacute; RỦI RO, QUẢN L&Yacute; TỔN THẤT</h4>
+
+<p><ul>
+    <li>Đ&aacute;nh gi&aacute; rủi ro v&agrave; đề xuất h&agrave;nh động khắc phục</li>
+    <li>Ph&acirc;n t&iacute;ch v&agrave; đ&aacute;nh gi&aacute; rủi ro v&agrave; mức độ an to&agrave;n</li>
+    <li>Đ&aacute;nh gi&aacute; rủi ro đối với hệ thống ph&ograve;ng ch&aacute;y v&agrave; an to&agrave;n ch&aacute;y nổ tại nh&agrave; m&aacute;y đ&oacute;ng t&agrave;u, c&aacute;c t&ograve;a nh&agrave;, nh&agrave; m&aacute;y, kho h&agrave;ng.</li>
+    <li>Gi&aacute;m định điều kiện trước khi đưa v&agrave;o vận h&agrave;nh</li>
+    <li>Gi&aacute;m định đề ph&ograve;ng hạn chế tổn thất t&agrave;i sản đối với c&aacute;c rủi ro về ch&iacute;nh s&aacute;ch.</li>
+</ul>
 </div>
 <!-- //end  col 2 --></p>
-<p><div ><br>    <h4 class="gt-title">Dự án đã thực hiện</h4>
-    <ul>
-        <li>PVI</li>
-        <li>Bảo Minh</li> 
-        <li>Bảo Long</li> 
-        <li>AON</li>
-        <li>Báo Việt</li>
-        <li>MIC</li>
-        <li>BIC</li>
-    </ul><br></div>
+<p><div></p>
+<h4>Dự &aacute;n đ&atilde; thực hiện</h4>
+
+<p><ul>
+    <li>PVI</li>
+    <li>Bảo Minh</li>
+    <li>Bảo Long</li>
+    <li>AON</li>
+    <li>B&aacute;o Việt</li>
+    <li>MIC</li>
+    <li>BIC</li>
+</ul>
+</div>
 <!-- //end  col 3 --></p>
 </div>
 				</div>

@@ -91,7 +91,22 @@
                 <div class="header-info-toggle">
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
-                <!doctype html>
+                <script src="/js/jquery.js"></script>
+                <script>
+                     
+                   jQuery(window).load(function() {
+                       jQuery('.choose').removeClass('active');
+                       jQuery('.choose').each(function() {
+                           var path = window.location.pathname.split("/"),
+                               href = jQuery(this).find('a').attr('href').split("/"),
+                               exactMatch = (path[1] === href[1]);
+                           if (exactMatch) {
+                               console.log(exactMatch);
+                               jQuery(this).addClass('active');
+                           }
+                       })
+                   });
+                </script>                <!doctype html>
 <html lang="en">
 
 
@@ -99,7 +114,7 @@
     <div class="header-top">
         <div class="row">
             <div class="col-sm-4 col-lg-3 hidden-xs hidden-sm" >
-                <div style="text-align:center" class="slogan">Công Ty Cổ Phần Giám Định Năng Lượng Việt Nam</div>
+                <div style="text-align:center" class="slogan">Công ty cổ phần giám định năng lượng Việt Nam</div>
             </div>
             <div class="col-lg-1 visible-lg"></div>
             <div class="col-sm-4 logo-wrap ">
@@ -279,29 +294,36 @@
 					<div class="col-md-8 col-lg-9">					
 						<h1 class="text-center decor color" style="font-size:38px">Kiểm Kê Kho</h1>
                         <div style="margin-top:-100px">
-                         <div style = "min-height: 500px;margin-top: 150px">
-    <div ><h4 class="gt-title">giới thiệu</h4><br>
-        <span class = "span">&nbsp;&nbsp;&nbsp;&nbsp; Đo đạc số liệu không gian 3 chiều bề mặt đống hàng bằng máy Toàn đạc điện tử Leica TCRA1200 R1000, Dựng hình 3D phù hợp với hình ảnh thực tế của đống hàng, Dùng phần mềm chuyên dụng để xử lý số liệu giúp xác định khối lượng đống hàng rời nhanh chóng và đạt kết quả chính xác cao.<br>
-        EIC tự hào là đơn vị sử dụng phương pháp tính toán hiện đại bằng phần mềm để cung cấp dịch vụ cho khách hàng.
-        <br><br>    </div>
-    <div ><h4 class="gt-title">Ưu điểm:</h4>
-        <ul class = "span1">
-            <li>Không tốn chi phí cho việc san bằng đống hàng rời theo phương pháp cổ điển.</li>
-            <li>Hình ảnh 3D được mô phỏng chính xác theo số đo thực tế</li>
-            <li>Sử dụng phần mềm để xử lý số liệu cho kết quả nhanh.</li>
-            <li>Thời gian cung cấp chứng thư nhanh chóng và kịp thời.</li>
+                        <div>
+<div>
+<h4>giới thiệu</h4>
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp; Đo đạc s&ocirc;́ li&ecirc;̣u kh&ocirc;ng gian 3 chiều bề mặt đống h&agrave;ng bằng máy Toàn đạc đi&ecirc;̣n tử Leica TCRA1200 R1000, Dựng hình 3D phù hợp với hình ảnh thực t&ecirc;́ của đ&ocirc;́ng hàng, Dùng ph&acirc;̀n m&ecirc;̀m chuy&ecirc;n dụng đ&ecirc;̉ xử lý s&ocirc;́ li&ecirc;̣u giúp xác định kh&ocirc;́i lượng đ&ocirc;́ng hàng rời nhanh chóng và đạt k&ecirc;́t quả chính xác cao.<br />
+EIC tự hào là đơn vị sử dụng phương pháp tính toán hi&ecirc;̣n đại bằng ph&acirc;̀n m&ecirc;̀m đ&ecirc;̉ cung c&acirc;́p dịch vụ cho khách hàng.</div>
 
-        </ul>
+<div>
+<h4>Ưu đi&ecirc;̉m:</h4>
 
-    </div>
-    <div ><h4 class="gt-title">Hàng hóa</h4><br>
-        <ul class = "span1"> 
-            <li>Xi Măng</li>
-            <li> Than</li>
-            <li> Cliker</li> 
-            <li>  Quặng,…</li><br>        </ul>
-    </div>
-  </div>
+<ul>
+    <li>Kh&ocirc;ng t&ocirc;́n chi phí cho vi&ecirc;̣c san bằng đ&ocirc;́ng hàng rời theo phương pháp c&ocirc;̉ đi&ecirc;̉n.</li>
+    <li>H&igrave;nh ảnh 3D được m&ocirc; phỏng ch&iacute;nh x&aacute;c theo số đo thực tế</li>
+    <li>Sử dụng ph&acirc;̀n m&ecirc;̀m đ&ecirc;̉ xử lý s&ocirc;́ li&ecirc;̣u cho kết quả nhanh.</li>
+    <li>Thời gian cung c&acirc;́p chứng thư nhanh chóng và kịp thời.</li>
+</ul>
+</div>
+
+<div>
+<h4>H&agrave;ng h&oacute;a</h4>
+&nbsp;
+
+<ul>
+    <li>Xi Măng</li>
+    <li>Than</li>
+    <li>Cliker</li>
+    <li>Quặng,&hellip;</li>
+</ul>
+</div>
+</div>
 </div>
 				</div>
 			

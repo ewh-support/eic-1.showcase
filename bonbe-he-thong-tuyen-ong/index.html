@@ -64,7 +64,22 @@
                 <div class="header-info-toggle">
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
-                <!doctype html>
+                <script src="/js/jquery.js"></script>
+                <script>
+                     
+                   jQuery(window).load(function() {
+                       jQuery('.choose').removeClass('active');
+                       jQuery('.choose').each(function() {
+                           var path = window.location.pathname.split("/"),
+                               href = jQuery(this).find('a').attr('href').split("/"),
+                               exactMatch = (path[1] === href[1]);
+                           if (exactMatch) {
+                               console.log(exactMatch);
+                               jQuery(this).addClass('active');
+                           }
+                       })
+                   });
+                </script>                <!doctype html>
 <html lang="en">
 
 
@@ -72,7 +87,7 @@
     <div class="header-top">
         <div class="row">
             <div class="col-sm-4 col-lg-3 hidden-xs hidden-sm" >
-                <div style="text-align:center" class="slogan">Công Ty Cổ Phần Giám Định Năng Lượng Việt Nam</div>
+                <div style="text-align:center" class="slogan">Công ty cổ phần giám định năng lượng Việt Nam</div>
             </div>
             <div class="col-lg-1 visible-lg"></div>
             <div class="col-sm-4 logo-wrap ">
@@ -236,7 +251,7 @@
                                 </div>
                             </div>
                             <div class="category-text">
-                                <h5 class="category-title">Giám định Dầu thô, Xăng dầu, Khí hóa lỏng</h5>
+                                <h5 class="category-title">Giám định dầu thô, xăng dầu, Khí hóa lỏng</h5>
                                 <p>Sử dụng dịch vụ giám định chuyên nghiệp giúp khách hàng giám sát chủ động trong hao hụt hàng hoá trong quá trình vận chuyển, ngăn ngừa tổn thất, …
                                 </p>
                                 <span class="category-more-link">
@@ -255,7 +270,7 @@
                                 </div>
                             </div>
                             <div class="category-text">
-                                <h5 class="category-title">Giám định Vật tư, Máy móc thiết bị</h5>
+                                <h5 class="category-title">Giám định Vật tư, máy móc thiết bị</h5>
                                 <p>Để kiểm soát chặt chẽ chất lượng một lô hàng máy móc, thiết bị nhập khẩu, phát hiện kịp thời sự thiếu hụt, hư hỏng, sai lệch hoặc tổn thất của hàng hóa,… </p>
                                 <span class="category-more-link">
                                     <span class="icon icon-right-arrow"></span>
@@ -273,7 +288,7 @@
                                 </div>
                             </div>
                             <div class="category-text">
-                                <h5 class="category-title">Giám định Hàng hóa, khoáng sản</h5>
+                                <h5 class="category-title">Giám định hàng hóa, khoáng sản</h5>
                                 <p>Với khối lượng hàng hoá xuất nhập khẩu lớn và có giá trị thì việc thất thoát một lượng nhỏ cũng ảnh hưởng đến lợi ích kinh tế, Vì vậy, trong hoạt động thương mại,
                                 </p>
                                 <span class="category-more-link">
@@ -292,7 +307,7 @@
                                 </div>
                             </div>
                             <div class="category-text">
-                                <h5 class="category-title">Giám định Hàng hải</h5>
+                                <h5 class="category-title">Giám định hàng hải</h5>
                                 <p>Việc xác định tàu chở hàng đủ điều kiện, khả năng chuyên chở hàng hóa trên sông, biển là điều kiện tiên quyết để bảo đảm an toàn cho cả con người và tài sản của d này,.
                                 </p>
                                 <span class="category-more-link">
@@ -311,7 +326,7 @@
                                 </div>
                             </div>
                             <div class="category-text">
-                                <h5 class="category-title">Giám định tổn thất Hàng hóa</h5>
+                                <h5 class="category-title">Giám định tổn thất hàng hóa</h5>
                                 <p>Hàng bị tổn thất phải được giám định ngay khi phát hiện ra tổn thất tại cảng dỡ hàng hoặc tại kho nhận hàng cuối cùng. Tại thời gian và địa điểm giám định trên, </p>
                                 <span class="category-more-link">
                                     <span class="icon icon-right-arrow"></span>
@@ -329,7 +344,7 @@
                                 </div>
                             </div>
                             <div class="category-text">
-                                <h5 class="category-title">Giám định tổn thất Hàng hải</h5>
+                                <h5 class="category-title">Giám định tổn thất hàng hải</h5>
                                 <p>Việc giám định tổn thất hàng hải sẽ đạt được hiệu quả cao nhất, khách quan bảo vệ quyền lợi chính đáng cho chủ hàng và các bên liên quan khác nếu được đảm nhận </p>
                                 <span class="category-more-link">
                                     <span class="icon icon-right-arrow"></span>
@@ -347,7 +362,7 @@
                                 </div>
                             </div>
                             <div class="category-text">
-                                <h5 class="category-title">Giám định tổn thất Tài sản kỹ thuật</h5>
+                                <h5 class="category-title">Giám định tổn thất tài sản kỹ thuật</h5>
                                 <p>Việc giám định tổn thất tài sản kỹ thuật giúp khách hàng xác định nguyên nhân và mức độ thiệt hại, đề nghị sửa chữa, thay thế và ước tính sửa chữa thay thế hoặc yêu cầu bồi thường bảo hiểm,</p>
                                 <span class="category-more-link">
                                     <span class="icon icon-right-arrow"></span>
@@ -365,7 +380,7 @@
                                 </div>
                             </div>
                             <div class="category-text">
-                                <h5 class="category-title">Kiểm định, Hiệu chuẩn bồn/bể, hệ thống tuyến ống</h5>
+                                <h5 class="category-title">Kiểm định, hiệu chuẩn bồn/bể, hệ thống tuyến ống</h5>
                                 <p>Việc xác định chính xác khối lượng hàng hóa dạng lỏng (dầu mỏ, sản phẩm dầu mỏ, LPG, LNG, các sản phẩm sau chế biến và các loại hóa chất sẽ giúp doanh nghiệp </p>
                                 <span class="category-more-link">
                                     <span class="icon icon-right-arrow"></span>
@@ -383,7 +398,7 @@
                                 </div>
                             </div>
                             <div class="category-text">
-                                <h5 class="category-title">Kiểm định, hiệu chuẩn Tàu, Sà lan</h5>
+                                <h5 class="category-title">Kiểm định, hiệu chuẩn tàu, sà lan</h5>
                                 <p>Áp dụng phương pháp mà các nước tiến tiến trên thế giới đang áp dụng, Chúng tôi sử dụng máy Toàn đạc điện tử Leica TCRA1200 R1000 đo đạt số liệu không gian ba chiều của các hầm hàng, Mô phỏng hình ảnh 3D
                                 </p>
                                 <span class="category-more-link">

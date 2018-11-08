@@ -91,7 +91,22 @@
                 <div class="header-info-toggle">
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
-                <!doctype html>
+                <script src="/js/jquery.js"></script>
+                <script>
+                     
+                   jQuery(window).load(function() {
+                       jQuery('.choose').removeClass('active');
+                       jQuery('.choose').each(function() {
+                           var path = window.location.pathname.split("/"),
+                               href = jQuery(this).find('a').attr('href').split("/"),
+                               exactMatch = (path[1] === href[1]);
+                           if (exactMatch) {
+                               console.log(exactMatch);
+                               jQuery(this).addClass('active');
+                           }
+                       })
+                   });
+                </script>                <!doctype html>
 <html lang="en">
 
 
@@ -99,7 +114,7 @@
     <div class="header-top">
         <div class="row">
             <div class="col-sm-4 col-lg-3 hidden-xs hidden-sm" >
-                <div style="text-align:center" class="slogan">Công Ty Cổ Phần Giám Định Năng Lượng Việt Nam</div>
+                <div style="text-align:center" class="slogan">Công ty cổ phần giám định năng lượng Việt Nam</div>
             </div>
             <div class="col-lg-1 visible-lg"></div>
             <div class="col-sm-4 logo-wrap ">
@@ -279,19 +294,27 @@
 					<div class="col-md-8 col-lg-9">					
 						<h1 class="text-center decor color" style="font-size:38px">tư vấn đào tạo</h1>
                         <div style="margin-top:-100px">
-                        <div style = "min-height: 500px;margin-top: 150px">
-    <div><h4 class="gt-title">Tư Vấn</h4>
-        <ul class = "span1">
-            <li>Tư vấn xây dựng Vilas theo ISO 17025</li>
-            <li>Hỗ trợ tư vấn xây dựng ISO 9000:2008</li><br>        </ul>
-    </div>
-    <div><h4 class="gt-title">Dào tạo</h4>
-        <ul class = "span1"> 
-            <li>Thực hành phân tích thử nghiệm sản phẩm Xăng, Dầu</li>
-            <li>Thực hành phân tích thử nghiệm sản phẩm Khí</li>
-            <li>Thực hành phân tích thử nghiệm dung môi hữu cơ, hóa chất</li><br>        </ul>
-    </div>
-  </div></div>
+                        <div>
+<div>
+<h4>Tư Vấn</h4>
+
+<ul>
+    <li>Tư vấn x&acirc;y dựng Vilas theo ISO 17025</li>
+    <li>Hỗ trợ tư vấn x&acirc;y dựng ISO 9000:2008</li>
+</ul>
+</div>
+
+<div>
+<h4>D&agrave;o tạo</h4>
+
+<ul>
+    <li>Thực h&agrave;nh ph&acirc;n t&iacute;ch thử nghiệm sản phẩm Xăng, Dầu</li>
+    <li>Thực h&agrave;nh ph&acirc;n t&iacute;ch thử nghiệm sản phẩm Kh&iacute;</li>
+    <li>Thực h&agrave;nh ph&acirc;n t&iacute;ch thử nghiệm dung m&ocirc;i hữu cơ, h&oacute;a chất</li>
+</ul>
+</div>
+</div>
+</div>
 				</div>
 			
 			</div>

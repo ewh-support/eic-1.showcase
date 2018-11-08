@@ -91,7 +91,22 @@
                 <div class="header-info-toggle">
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
-                <!doctype html>
+                <script src="/js/jquery.js"></script>
+                <script>
+                     
+                   jQuery(window).load(function() {
+                       jQuery('.choose').removeClass('active');
+                       jQuery('.choose').each(function() {
+                           var path = window.location.pathname.split("/"),
+                               href = jQuery(this).find('a').attr('href').split("/"),
+                               exactMatch = (path[1] === href[1]);
+                           if (exactMatch) {
+                               console.log(exactMatch);
+                               jQuery(this).addClass('active');
+                           }
+                       })
+                   });
+                </script>                <!doctype html>
 <html lang="en">
 
 
@@ -99,7 +114,7 @@
     <div class="header-top">
         <div class="row">
             <div class="col-sm-4 col-lg-3 hidden-xs hidden-sm" >
-                <div style="text-align:center" class="slogan">Công Ty Cổ Phần Giám Định Năng Lượng Việt Nam</div>
+                <div style="text-align:center" class="slogan">Công ty cổ phần giám định năng lượng Việt Nam</div>
             </div>
             <div class="col-lg-1 visible-lg"></div>
             <div class="col-sm-4 logo-wrap ">
@@ -279,38 +294,49 @@
 					<div class="col-md-8 col-lg-9">					
 						<h1 class="text-center decor color" style="font-size:38px">Giám Định Vật Tư, Máy Móc Thiết Bị</h1>
                         <div style="margin-top:-100px">
-                        <div style = "min-height: 500px;margin-top: 150px">
-    <div ><h4 class="gt-title">giới thiệu</h4><br>
-        <span class = "span">&nbsp;&nbsp;&nbsp;&nbsp;Để kiểm soát chặt chẽ chất lượng một lô hàng máy móc, thiết bị nhập khẩu, phát hiện kịp thời sự thiếu hụt, hư hỏng, sai lệch hoặc tổn thất của hàng hóa,…Vì vậy, sử dụng dịch vụ giám định là yêu cầu cần thiếtt và yêu cầu này nên được tiến hành bắt đầu ngay tại bến đi, trên tàu/ phương tiện vận chuyển, cảng, cửa khẩu, trong quá trình vận chuyển, xếp dỡ cho đến tận nhà máy/ công trình/ nơi tập kết hàng hóa.
-<br>
-        <span class = "span">&nbsp;&nbsp;&nbsp;&nbsp;Nhằm giúp cho các doanh nghiệp tiết kiệm được thời gian, chi phí, nhân lực… trong việc thực hiện một hợp đồng mua bán. Với những đội ngũ cán bộ chuyên môn, nghiệp vụ và kinh nghiệm kiểm tra hàng hoá, vật tư, máy móc thiết bị, phương tiện…EIC sẽ giúp chứng minh lô hàng xuất khẩu, nhập khẩu có đáp ứng yêu cầu với hợp đồng mua bán, yêu cầu của dự án, công trình và các quy định quản lý của nhà nước hay không. </span> 
-    </div><br>
-    <div ><h4 class="gt-title">các dịch vụ chính</h4>
-        <ul class = "span1">
-            <li>Giám định số lượng, chất lượng và tình trạng máy móc thiết bị</li>
-            <li>Giám định chủng loại, qui cách và đặc tính kỹ thuật máy móc thiết bị</li>
-            <li>Giám định phạm vi sử dụng và tính chuyên dùng máy móc thiết bị</li>
-            <li>Giám định chất lượng còn lại của máy móc thiết bị/ dây chuyền công nghệ đã qua sử dụng theo các quy định hiện hành.</li>
-            <li>Giám định tính đồng bộ và xuất xứ máy móc thiết bị</li>
-            <li>Giám định chất lượng máy móc thiết bị/ dây chuyền công nghệ</li>
-            <li>Giám định tổn thất máy móc thiết bị (nếu có)</li>
-            <li>Giám định trưng cầu giám định cho Hải quan..</li>
-        </ul>
-    </div>
-    <div ><h4 class="gt-title">dự án đã thục hiện</h4>
-        <ul class = "span1">
-            <li>Nhiệt Điện: Nhà máy Nhiệt điện Vũng Áng, Nhà máy Nhiệt điện Thái Bình, Nhà máy nhiệt điện Nhơn Trạch</li>
-            <li>Thủy điện: Nhà máy Thủy điện Hủa Na, Nhà máy Thủy điện Đồng Nai 5, Thủy điện Daksin, Thủy điện Xekeman,…</li> 
-            <li>Dự án khác: Caosumina, Nhà máy Ethanol Phú Thọ, PVPS Cà Mau,…</li> 
-        </ul>
-        <h4 class="gt-title">chứng nhận</h4>
-        <ul class = "span1">
-            <li>Chứng nhận hệ thống quản lý chất lượng về cung cấp dịch vụ Giám định Thương mại ISO 9000</li>
-            <li>Chứng chỉ công nhận đủ năng lực giám định phù hợp với các yêu cầu của tiêu chuẩn – ISO 17020: 2012</li> 
-            <li>Đăng ký dịch vụ giám định phục vụ quản lý nhà nước về Hải quan.</li> 
-            <li>Đăng ký dịch vụ giám định máy móc thiết bị cũ theo thông tư 23 của Bộ Khoa học Công Nghệ.</li> 
-        </ul>
-    </div></div>
+                        <div>
+<div>
+<h4>giới thiệu</h4>
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Để kiểm so&aacute;t chặt chẽ chất lượng một l&ocirc; h&agrave;ng m&aacute;y m&oacute;c, thiết bị nhập khẩu, ph&aacute;t hiện kịp thời sự thiếu hụt, hư hỏng, sai lệch hoặc tổn thất của h&agrave;ng h&oacute;a,&hellip;V&igrave; vậy, sử dụng dịch vụ gi&aacute;m định l&agrave; y&ecirc;u cầu cần thiếtt v&agrave; y&ecirc;u cầu n&agrave;y n&ecirc;n được tiến h&agrave;nh bắt đầu ngay tại bến đi, tr&ecirc;n t&agrave;u/ phương tiện vận chuyển, cảng, cửa khẩu, trong qu&aacute; tr&igrave;nh vận chuyển, xếp dỡ cho đến tận nh&agrave; m&aacute;y/ c&ocirc;ng tr&igrave;nh/ nơi tập kết h&agrave;ng h&oacute;a.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Nhằm gi&uacute;p cho c&aacute;c doanh nghiệp tiết kiệm được thời gian, chi ph&iacute;, nh&acirc;n lực&hellip; trong việc thực hiện một hợp đồng mua b&aacute;n. Với những đội ngũ c&aacute;n bộ chuy&ecirc;n m&ocirc;n, nghiệp vụ v&agrave; kinh nghiệm kiểm tra h&agrave;ng ho&aacute;, vật tư, m&aacute;y m&oacute;c thiết bị, phương tiện&hellip;EIC sẽ gi&uacute;p chứng minh l&ocirc; h&agrave;ng xuất khẩu, nhập khẩu c&oacute; đ&aacute;p ứng y&ecirc;u cầu với hợp đồng mua b&aacute;n, y&ecirc;u cầu của dự &aacute;n, c&ocirc;ng tr&igrave;nh v&agrave; c&aacute;c quy định quản l&yacute; của nh&agrave; nước hay kh&ocirc;ng.</div>
+&nbsp;
+
+<div>
+<h4>c&aacute;c dịch vụ ch&iacute;nh</h4>
+
+<ul>
+    <li>Gi&aacute;m định số lượng, chất lượng v&agrave; t&igrave;nh trạng m&aacute;y m&oacute;c thiết bị</li>
+    <li>Gi&aacute;m định chủng loại, qui c&aacute;ch v&agrave; đặc t&iacute;nh kỹ thuật m&aacute;y m&oacute;c thiết bị</li>
+    <li>Gi&aacute;m định phạm vi sử dụng v&agrave; t&iacute;nh chuy&ecirc;n d&ugrave;ng m&aacute;y m&oacute;c thiết bị</li>
+    <li>Gi&aacute;m định chất lượng c&ograve;n lại của m&aacute;y m&oacute;c thiết bị/ d&acirc;y chuyền c&ocirc;ng nghệ đ&atilde; qua sử dụng theo c&aacute;c quy định hiện h&agrave;nh.</li>
+    <li>Gi&aacute;m định t&iacute;nh đồng bộ v&agrave; xuất xứ m&aacute;y m&oacute;c thiết bị</li>
+    <li>Gi&aacute;m định chất lượng m&aacute;y m&oacute;c thiết bị/ d&acirc;y chuyền c&ocirc;ng nghệ</li>
+    <li>Gi&aacute;m định tổn thất m&aacute;y m&oacute;c thiết bị (nếu c&oacute;)</li>
+    <li>Gi&aacute;m định trưng cầu gi&aacute;m định cho Hải quan..</li>
+</ul>
+</div>
+
+<div>
+<h4>dự &aacute;n đ&atilde; thục hiện</h4>
+
+<ul>
+    <li>Nhiệt Điện: Nh&agrave; m&aacute;y Nhiệt điện Vũng &Aacute;ng, Nh&agrave; m&aacute;y Nhiệt điện Th&aacute;i B&igrave;nh, Nh&agrave; m&aacute;y nhiệt điện Nhơn Trạch</li>
+    <li>Thủy điện: Nh&agrave; m&aacute;y Thủy điện Hủa Na, Nh&agrave; m&aacute;y Thủy điện Đồng Nai 5, Thủy điện Daksin, Thủy điện Xekeman,&hellip;</li>
+    <li>Dự &aacute;n kh&aacute;c: Caosumina, Nh&agrave; m&aacute;y Ethanol Ph&uacute; Thọ, PVPS C&agrave; Mau,&hellip;</li>
+</ul>
+
+<h4>chứng nhận</h4>
+
+<ul>
+    <li>Chứng nhận hệ thống quản l&yacute; chất lượng về cung cấp dịch vụ Gi&aacute;m định Thương mại ISO 9000</li>
+    <li>Chứng chỉ c&ocirc;ng nhận đủ năng lực gi&aacute;m định ph&ugrave; hợp với c&aacute;c y&ecirc;u cầu của ti&ecirc;u chuẩn &ndash; ISO 17020: 2012</li>
+    <li>Đăng k&yacute; dịch vụ gi&aacute;m định phục vụ quản l&yacute; nh&agrave; nước về Hải quan.</li>
+    <li>Đăng k&yacute; dịch vụ gi&aacute;m định m&aacute;y m&oacute;c thiết bị cũ theo th&ocirc;ng tư 23 của Bộ Khoa học C&ocirc;ng Nghệ.</li>
+</ul>
+</div>
+</div>
+</div>
 				</div>
 			
 			</div>

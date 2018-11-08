@@ -91,7 +91,22 @@
                 <div class="header-info-toggle">
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
-                <!doctype html>
+                <script src="/js/jquery.js"></script>
+                <script>
+                     
+                   jQuery(window).load(function() {
+                       jQuery('.choose').removeClass('active');
+                       jQuery('.choose').each(function() {
+                           var path = window.location.pathname.split("/"),
+                               href = jQuery(this).find('a').attr('href').split("/"),
+                               exactMatch = (path[1] === href[1]);
+                           if (exactMatch) {
+                               console.log(exactMatch);
+                               jQuery(this).addClass('active');
+                           }
+                       })
+                   });
+                </script>                <!doctype html>
 <html lang="en">
 
 
@@ -99,7 +114,7 @@
     <div class="header-top">
         <div class="row">
             <div class="col-sm-4 col-lg-3 hidden-xs hidden-sm" >
-                <div style="text-align:center" class="slogan">Công Ty Cổ Phần Giám Định Năng Lượng Việt Nam</div>
+                <div style="text-align:center" class="slogan">Công ty cổ phần giám định năng lượng Việt Nam</div>
             </div>
             <div class="col-lg-1 visible-lg"></div>
             <div class="col-sm-4 logo-wrap ">
@@ -279,53 +294,63 @@
 					<div class="col-md-8 col-lg-9">					
 						<h1 class="text-center decor color" style="font-size:38px">Giám Định Hàng Hóa, Khoáng Sản</h1>
                         <div style="margin-top:-100px">
-                        <div style = "min-height: 500px;margin-top: 150px">
-    <div ><h4 class="gt-title">giới thiệu</h4><br>
-        <span class = "span">&nbsp;&nbsp;&nbsp;&nbsp;Với khối lượng hàng hóa xuất nhập khẩu lớn và có giá trị thì việc thất thoát một lượng nhỏ cũng ảnh hưởng đến lợi ích kinh tế, Vì vậy, trong hoạt động thương mại, các bên kí kết được khuyến cáo chỉ định một tổ chức giám định độc lập, trung lập, có đủ năng lực, uy tín để tiến hành kiểm tra và cấp kết quả về thực trạng hàng hóa, bảo vệ giá trị hàng hóa, đặc biệt là giảm thiểu rủi ro và tổn thất thương mại cho các bên liên quan.</span><br>
-        <span class = "span"> &nbsp;&nbsp;&nbsp;&nbsp;Để đáp ứng yêu cầu ngày càng cao của khách hàng, EIC đã tập trung xây dựng đội ngũ Giám định viên chuyên nghiệp, dày dạn kinh nghiệm và chuyên sâu kiến thức trong việc giám định hàng hóa và tính toán lợi ích độc lập cho các bên liên quan. Đặc biệt giúp chứng minh lô hàng xuất khẩu, nhập khẩu phù hợp với hợp đồng mua bán và các quy định quản lý của nhà nước. </span><br>
-        <span class = "span">&nbsp;&nbsp;&nbsp;&nbsp;Phạm vi cung cấp giám định hàng hóa trên toàn lãnh thổ Việt Nam, cam kết cung cấp kết quả chính xác, trung thực, kịp thời.</span><br>    </div><br>
-    <div ><h4 class="gt-title">hàng hóa giám định</h4>
-        <ul class = "span1">
-            <li>Hàng hóa nông sản: Gạo, Ngô/Bắp, Tiêu, Sắn lát, Bã đầu nành, Dầu thực vật, Trấu nén, Dăm gỗ, Dầu cọ,…</li>
-            <li>Hàng hóa khoáng sản: Than, Quặng sắt, Clinker, Phân bón, Sắt thép…</li>
-            <li>Và các hàng xá, hàng bao, hàng   container khác.</li>
-        </ul>
-        <h4 class="gt-title">dịch vụ giám định</h4>
-        <ul class = "span1">
-            <li>Giám định khối lượng bằng mớn nước</li>
-            <li>Giám định bao bì, ký mã hiệu, ngày sản xuất, ngày hết hạn…</li>
-            <li>Lấy mẫu</li>
-            <li>Kiểm đếm</li>
-            <li>Giám sát xếp/dỡ hàng</li>
-            <li>Kiểm tra sạch sẽ phương tiện chuyên chở: tàu, sà lan, container…</li>
-            <li>Giám định phương tiện vận chuyển để xác định sự phù hợp vận chuyển hàng hóa</li>
-            <li>Giám định sắp xếp hàng hóa</li>
-        </ul>
-    </div>
-    <div >
-        <ul class = "span1">
-            <li>Giám định tình trạng hàng hóa</li>
-            <li>Giám sát khối lượng qua cân bàn, cân cầu</li>
-            <li>Giám định khối lượng hàng lỏng chở bằng tàu biển, container…</li>
-            <li>Giám định trước khi xếp hàng</li>
-            <li>Đề phòng hạn chế tổn thất hàng hóa</li>
-            <li>Giám định tổn thất hàng hóa</li>
-        </ul>
-        <h4 class="gt-title">dự án</h4>
-        <ul class = "span1">
-            <li>Khách hàng Bảo Hiểm: PVI, Bảo Việt, BIC, Bảo Long,…</li>
-            <li>Khách hàng khác: Ban quản lý Nhiệt Điện Vũng Áng, Công ty Điện lực Dầu Khí, Than Đông Bắc, Than Thuận An, Nhà máy Nhiệt Điện Duyên Hải,…</li>
-        </ul>
-        <h4 class="gt-title">Chứng nhận</h4>
-        <ul class = "span1">
-            <li>Chứng nhận hệ thống quản lý chất lượng về cung cấp dịch vụ Giám định Thương mại ISO 9000</li>
-            <li>Chứng chỉ công nhận đủ năng lực giám định phù hợp với các yêu cầu của tiêu chuẩn – ISO 17020: 2012</li>
-        </ul>
-    </div>
+                        <div>
+<div>
+<h4>giới thiệu</h4>
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Với khối lượng h&agrave;ng h&oacute;a xuất nhập khẩu lớn v&agrave; c&oacute; gi&aacute; trị th&igrave; việc thất tho&aacute;t một lượng nhỏ cũng ảnh hưởng đến lợi &iacute;ch kinh tế, V&igrave; vậy, trong hoạt động thương mại, c&aacute;c b&ecirc;n k&iacute; kết được khuyến c&aacute;o chỉ định một tổ chức gi&aacute;m định độc lập, trung lập, c&oacute; đủ năng lực, uy t&iacute;n để tiến h&agrave;nh kiểm tra v&agrave; cấp kết quả về thực trạng h&agrave;ng h&oacute;a, bảo vệ gi&aacute; trị h&agrave;ng h&oacute;a, đặc biệt l&agrave; giảm thiểu rủi ro v&agrave; tổn thất thương mại cho c&aacute;c b&ecirc;n li&ecirc;n quan.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Để đ&aacute;p ứng y&ecirc;u cầu ng&agrave;y c&agrave;ng cao của kh&aacute;ch h&agrave;ng, EIC đ&atilde; tập trung x&acirc;y dựng đội ngũ Gi&aacute;m định vi&ecirc;n chuy&ecirc;n nghiệp, d&agrave;y dạn kinh nghiệm v&agrave; chuy&ecirc;n s&acirc;u kiến thức trong việc gi&aacute;m định h&agrave;ng h&oacute;a v&agrave; t&iacute;nh to&aacute;n lợi &iacute;ch độc lập cho c&aacute;c b&ecirc;n li&ecirc;n quan. Đặc biệt gi&uacute;p chứng minh l&ocirc; h&agrave;ng xuất khẩu, nhập khẩu ph&ugrave; hợp với hợp đồng mua b&aacute;n v&agrave; c&aacute;c quy định quản l&yacute; của nh&agrave; nước.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Phạm vi cung cấp gi&aacute;m định h&agrave;ng h&oacute;a tr&ecirc;n to&agrave;n l&atilde;nh thổ Việt Nam, cam kết cung cấp kết quả ch&iacute;nh x&aacute;c, trung thực, kịp thời.</div>
+&nbsp;
 
+<div>
+<h4>h&agrave;ng h&oacute;a gi&aacute;m định</h4>
 
+<ul>
+    <li>H&agrave;ng h&oacute;a n&ocirc;ng sản: Gạo, Ng&ocirc;/Bắp, Ti&ecirc;u, Sắn l&aacute;t, B&atilde; đầu n&agrave;nh, Dầu thực vật, Trấu n&eacute;n, Dăm gỗ, Dầu cọ,&hellip;</li>
+    <li>H&agrave;ng h&oacute;a kho&aacute;ng sản: Than, Quặng sắt, Clinker, Ph&acirc;n b&oacute;n, Sắt th&eacute;p&hellip;</li>
+    <li>V&agrave; c&aacute;c h&agrave;ng x&aacute;, h&agrave;ng bao, h&agrave;ng container kh&aacute;c.</li>
+</ul>
 
-<p></div></p>
+<h4>dịch vụ gi&aacute;m định</h4>
+
+<ul>
+    <li>Gi&aacute;m định khối lượng bằng mớn nước</li>
+    <li>Gi&aacute;m định bao b&igrave;, k&yacute; m&atilde; hiệu, ng&agrave;y sản xuất, ng&agrave;y hết hạn&hellip;</li>
+    <li>Lấy mẫu</li>
+    <li>Kiểm đếm</li>
+    <li>Gi&aacute;m s&aacute;t xếp/dỡ h&agrave;ng</li>
+    <li>Kiểm tra sạch sẽ phương tiện chuy&ecirc;n chở: t&agrave;u, s&agrave; lan, container&hellip;</li>
+    <li>Gi&aacute;m định phương tiện vận chuyển để x&aacute;c định sự ph&ugrave; hợp vận chuyển h&agrave;ng h&oacute;a</li>
+    <li>Gi&aacute;m định sắp xếp h&agrave;ng h&oacute;a</li>
+</ul>
+</div>
+
+<div>
+<ul>
+    <li>Gi&aacute;m định t&igrave;nh trạng h&agrave;ng h&oacute;a</li>
+    <li>Gi&aacute;m s&aacute;t khối lượng qua c&acirc;n b&agrave;n, c&acirc;n cầu</li>
+    <li>Gi&aacute;m định khối lượng h&agrave;ng lỏng chở bằng t&agrave;u biển, container&hellip;</li>
+    <li>Gi&aacute;m định trước khi xếp h&agrave;ng</li>
+    <li>Đề ph&ograve;ng hạn chế tổn thất h&agrave;ng h&oacute;a</li>
+    <li>Gi&aacute;m định tổn thất h&agrave;ng h&oacute;a</li>
+</ul>
+
+<h4>dự &aacute;n</h4>
+
+<ul>
+    <li>Kh&aacute;ch h&agrave;ng Bảo Hiểm: PVI, Bảo Vi&ecirc;̣t, BIC, Bảo Long,&hellip;</li>
+    <li>Kh&aacute;ch h&agrave;ng kh&aacute;c: Ban quản l&yacute; Nhiệt Điện Vũng &Aacute;ng, C&ocirc;ng ty Điện lực Dầu Kh&iacute;, Than Đ&ocirc;ng Bắc, Than Thuận An, Nh&agrave; m&aacute;y Nhiệt Điện Duy&ecirc;n Hải,&hellip;</li>
+</ul>
+
+<h4>Chứng nhận</h4>
+
+<ul>
+    <li>Chứng nhận hệ thống quản l&yacute; chất lượng về cung cấp dịch vụ Gi&aacute;m định Thương mại ISO 9000</li>
+    <li>Chứng chỉ c&ocirc;ng nhận đủ năng lực gi&aacute;m định ph&ugrave; hợp với c&aacute;c y&ecirc;u cầu của ti&ecirc;u chuẩn &ndash; ISO 17020: 2012</li>
+</ul>
+</div>
+</div>
 </div>
 				</div>
 			

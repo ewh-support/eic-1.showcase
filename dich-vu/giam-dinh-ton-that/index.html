@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="html 5 template">
-    <meta name="author" content="EIC">
+    <meta name="author" content="tonytemplates.com">
 
-
+   
     <title>CÔNG TY CỔ PHẦN GIÁM ĐỊNH NĂNG LƯỢNG VIỆT NAM </title>
     <!-- Bootstrap core CSS -->
     <link href="/css/plugins/bootstrap.min.css" rel="stylesheet">
@@ -18,12 +18,11 @@
     <link href="/css/plugins/slick.css" rel="stylesheet">
     <link href="/css/plugins/magnific-popup.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
-     <script src="/js/custom.js"></script>
     <!-- Icon Font-->
     <link href="/font/icons/style.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"> </head>
 <style>
     .service-banner-image img {
         height: 200px;
@@ -73,7 +72,22 @@
                 <div class="header-info-toggle">
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
-                <!doctype html>
+                <script src="/js/jquery.js"></script>
+                <script>
+                     
+                   jQuery(window).load(function() {
+                       jQuery('.choose').removeClass('active');
+                       jQuery('.choose').each(function() {
+                           var path = window.location.pathname.split("/"),
+                               href = jQuery(this).find('a').attr('href').split("/"),
+                               exactMatch = (path[1] === href[1]);
+                           if (exactMatch) {
+                               console.log(exactMatch);
+                               jQuery(this).addClass('active');
+                           }
+                       })
+                   });
+                </script>                <!doctype html>
 <html lang="en">
 
 
@@ -81,7 +95,7 @@
     <div class="header-top">
         <div class="row">
             <div class="col-sm-4 col-lg-3 hidden-xs hidden-sm" >
-                <div style="text-align:center" class="slogan">Công Ty Cổ Phần Giám Định Năng Lượng Việt Nam</div>
+                <div style="text-align:center" class="slogan">Công ty cổ phần giám định năng lượng Việt Nam</div>
             </div>
             <div class="col-lg-1 visible-lg"></div>
             <div class="col-sm-4 logo-wrap ">
@@ -226,7 +240,6 @@
             </div>
         </nav>
     </header>
-   
     <!-- // Header -->
     <!-- Content  -->
     <div id="page-content">
@@ -237,63 +250,115 @@
                     <div class="block block-top-lined">
 
                         <div class="col-md-12 col-lg-12">
-                            <h1 class="text-center decor color">Giám Định Tổn Thất</h1>
+                            <h1 class="text-center decor color">Giám Định Thương Mại</h1>
                         </div>
                     </div>
-
-                </div>
-                <div class="col-sm-4">
-                    <a href="/giam-dinh-ton-that-hang-hoa" class="service-banner">
-                        <div class="service-banner-image">
-                            <img src="/img/giam-dinh-ton-that-hang-hoa-770-533.jpg" alt="">
-                        </div>
-                        <div class="service-banner-bg"></div>
-                        <div class="service-banner-title">
-                            <h6>Giám Định Tổn Thất Hàng Hóa</h6>
-                            <span class="service-banner-more-link">
+                    <div class="col-sm-3">
+                        <a href="/hang-hai" class="service-banner active">
+                            <div class="service-banner-image">
+                                <img src="/HINHWEB/dichvu/giam+dinh+hang+hai_3_l.jpg" alt="">
+                            </div>
+                            <div class="service-banner-bg"></div>
+                            <div class="service-banner-title">
+                                <h6>Giám Định Tổn Thất Hàng hải</h6>
+                                <span class="service-banner-more-link">
                                     <span class="icon icon-right-arrow"></span>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="/giam-dinh-ton-that-hang-hai" class="service-banner">
-                        <div class="service-banner-image">
-                            <img src="/img/16_original.jpg" alt="">
-                        </div>
-                        <div class="service-banner-bg"></div>
-                        <div class="service-banner-title">
-                            <h6>Giám Định Tổn Thất hàng Hải</h6>
-                            <span class="service-banner-more-link">
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="/giam-dinh-ton-that-tai-san-ky-thuat" class="service-banner active">
+                            <div class="service-banner-image">
+                                <img src="/HINHWEB/tonthathanghoa.jpg" alt="">
+                            </div>
+                            <div class="service-banner-bg"></div>
+                            <div class="service-banner-title">
+                                <h6>Giám Định Tổn Thất Tài Sản Kỹ Thuật</h6>
+                                <span class="service-banner-more-link">
                                     <span class="icon icon-right-arrow"></span>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="/giam-dinh-ton-that-tai-san-ky-thuat" class="service-banner">
-                        <div class="service-banner-image">
-                            <img src="/img/giam-dinh-ton-that-tai-san-ky-thuat-654.jpg" alt="">
-                        </div>
-                        <div class="service-banner-bg"></div>
-                        <div class="service-banner-title">
-                            <h6>Giám định tổn thất Tài sản kỹ thuật</h6>
-                            <span class="service-banner-more-link">
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="/giam-dinh-ton-that-hang-hoa" class="service-banner active">
+                            <div class="service-banner-image">
+                                <img src="/HINHWEB/dichvu/giam+ding+ton+that_1_l.jpg" alt="">
+                            </div>
+                            <div class="service-banner-bg"></div>
+                            <div class="service-banner-title">
+                                <h6>Giám Định Tổn Thất Hàng Hóa</h6>
+                                <span class="service-banner-more-link">
                                     <span class="icon icon-right-arrow"></span>
-                            </span>
-                        </div>
-                    </a>
-                </div>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- <div class="col-sm-3">
+                        <a href="/giam-dinh-san-pham-dau-tho-xang-dau-khi-hoa-long" class="service-banner active">
+                            <div class="service-banner-image">
+                                <img src="/img/do-luong-bon-be-he-thong-tuyen-ong-854.jpg" alt="">
+                            </div>
+                            <div class="service-banner-bg"></div>
+                            <div class="service-banner-title">
+                                <h6>Giám định Dầu thô, Xăng dầu, Khí hóa lỏng</h6>
+                                <span class="service-banner-more-link">
+                                    <span class="icon icon-right-arrow"></span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="/giam-dinh-vat-tu-may-moc-thiet-bi" class="service-banner">
+                            <div class="service-banner-image">
+                                <img src="/img/do-luong-hieu-chuan-tau-sa-lan-506-258.jpg" alt="">
+                            </div>
+                            <div class="service-banner-bg"></div>
+                            <div class="service-banner-title">
+                                <h6>Giám định Vật tư, Máy móc thiết bị</h6>
+                                <span class="service-banner-more-link">
+                                    <span class="icon icon-right-arrow"></span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="/giam-dinh-hang-hoa-khoang-san" class="service-banner">
+                            <div class="service-banner-image">
+                                <img src="/img/giam+dinh+hoang+hoa+khoan+san_4_l.jpg" alt="">
+                            </div>
+                            <div class="service-banner-bg"></div>
+                            <div class="service-banner-title">
+                                <h6>Giám định Hàng hóa, khoáng sản</h6>
+                                <span class="service-banner-more-link">
+                                    <span class="icon icon-right-arrow"></span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="/giam-dinh-hang-hai" class="service-banner">
+                            <div class="service-banner-image">
+                                <img src="/img/offshore_patrol_vessels.jpg" alt="">
+                            </div>
+                            <div class="service-banner-bg"></div>
+                            <div class="service-banner-title">
+                                <h6>Giám định Hàng hải</h6>
+                                <span class="service-banner-more-link">
+                                    <span class="icon icon-right-arrow"></span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div> -->
             </div>
         </div>
+        <!-- //Block -->
+        <!--Two Columns-->
+
+        <!-- //Two Columns-->
     </div>
-    <!-- //Block -->
-    <!--Two Columns-->
-
-
-
-    <!-- //Two Columns-->
-
     <!-- // Content  -->
     <!-- Footer -->
     <!doctype html>
