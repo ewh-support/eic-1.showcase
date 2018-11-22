@@ -350,8 +350,8 @@
                                 <li class="choose1"><a href="/">Giám Định Tổn Thất Tài Sản Kỹ Thuật</a></li>        
                                 <li class="choose1"><a href="/">Giám Định Tổn Thất Hàng Hóa</a></li>        
                                 <li class="choose1"><a href="/">GIÁM ĐỊNH THỬ NGHIỆM PHỤC VỤ QUẢN LÝ NHÀ NƯỚC</a></li>        
-                                <li class="choose1"><a href="/">Giám Định  Hàng Hải</a></li>        
                                 <li class="choose1"><a href="/">Giám Định Hàng Hóa, Khoáng Sản</a></li>        
+                                <li class="choose1"><a href="/">Giám Định  Hàng Hải</a></li>        
                                 <li class="choose1"><a href="/">Giám định kỹ thuật cao </a></li>        
                                 <li class="choose1"><a href="/">Giám Định Tổn Thất Hàng hải</a></li>        
                                
@@ -432,6 +432,78 @@ EIC tự hào là đơn vị sử dụng phương pháp tính toán hi&ec
                 transform: rotate(180deg);
                 display: block;
             }
+            .back-to-bot {
+            position: fixed;
+            bottom: -50px;
+            opacity: 0;
+            visibility: hidden;
+            right: 15px;
+            z-index: 1000;
+            -webkit-transition: all 0.4s ease;
+            -moz-transition: all 0.4s ease;
+            -ms-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+        }
+        
+        @media (max-width: 1199px) {
+            .back-to-bot {
+                right: 15px;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .back-to-bot {
+                margin-bottom: 0 !important;
+            }
+        }
+        
+        @media (max-width: 991px) {
+            .back-to-bot {
+                right: 15px;
+            }
+        }
+        
+        .back-to-bot a {
+            display: block;
+            color: #005395;
+            font-size: 60px;
+            line-height: 60px;
+            text-align: center;
+            text-decoration: none;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+        }
+        
+        .back-to-bot:hover a {
+            color: #005395;
+        }
+        
+        .back-to-bot.visible {
+            opacity: 1;
+            visibility: visible;
+            bottom: 27px;
+        }
+        
+        @media (max-width: 991px) {
+            .back-to-bot.visible {
+                bottom: 23px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .back-to-bot.visible {
+                bottom: 42px;
+            }
+        }
+        
+        @media (max-width: 767px) and (orientation: landscape) {
+            body.is-ios .back-to-bot.visible {
+                bottom: 55px !important;
+            }
+        }
+        
         </style>
     <div class="page-footer">
         <div class="back-to-top "  >
@@ -441,7 +513,7 @@ EIC tự hào là đơn vị sử dụng phương pháp tính toán hi&ec
            
            
         </div> 
-        <div class="back-to-bottom visible">
+        <div class="back-to-bot visible">
             <a class="xoay-icon" href="index.html#bot">
                 <span class="icon icon-up-arrow"></span>
             </a>
@@ -452,10 +524,10 @@ EIC tự hào là đơn vị sử dụng phương pháp tính toán hi&ec
         <script>
             jQuery(window).scroll(function () {
                 if ( jQuery(this).scrollTop() > 180) {
-                    jQuery('.back-to-bottom').removeClass("visible");
+                    jQuery('.back-to-bot').removeClass("visible");
                 }
                 else {
-                     jQuery('.back-to-bottom').addClass("visible");
+                     jQuery('.back-to-bot').addClass("visible");
                 }
             });
         </script>
