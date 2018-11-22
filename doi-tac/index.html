@@ -92,7 +92,7 @@
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
                 <script src="/js/jquery.js"></script>
-                <script>
+                 <script>
                      
                    jQuery(window).load(function() {
                        jQuery('.choose').removeClass('active');
@@ -106,7 +106,9 @@
                            }
                        })
                    });
-                </script>                <!doctype html>
+                </script>
+                
+                <!doctype html>
 <html lang="en">
 
 
@@ -223,7 +225,7 @@
 
 			</ul>
 		</li> -->
-		<li class="dropdown"> <a href="services.html" data-toggle="dropdown">Dịch Vụ<span class="ecaret"></span></a>
+		<li class="dropdown"> <a href="/dich-vu" data-toggle="dropdown">Dịch Vụ<span class="ecaret"></span></a>
 			<ul class="dropdown-menu" role="menu" style="display: none;">
 				<li class="dropdown-submenu"> <a href="/dich-vu/giam-dinh-thuong-mai" data-toggle="dropdown">GIÁM ĐỊNH THƯƠNG MẠI<span
 						 class="ecaret"></span></a>
@@ -297,22 +299,9 @@
 
 	</ul>
 </div>
-<script src="/js/jquery.js"></script>
-<script>
 
-	jQuery(window).load(function () {
-		jQuery('.choose').removeClass('active');
-		jQuery('.choose').each(function () {
-			var path = window.location.pathname.split("/"),
-				href = jQuery(this).find('a').attr('href').split("/"),
-				exactMatch = (path[1] === href[1]);
-			if (exactMatch) {
-				console.log(exactMatch);
-				jQuery(this).addClass('active');
-			}
-		})
-	});
-</script>
+
+
             </div>
         </nav>
     </header>
@@ -413,13 +402,13 @@
                             <div class="col-sm-6 col-md-6 col-lg-4 ">
                                 <div class="category-item mb-sm animation " data-animation="fadeIn "
                                     data-animation-delay="0s ">
-                                    <div class="category-image "> <a href="/petrolimex"><img class="ip" width="100% " height="100% " src="/logo/p.jpg "
+                                    <div class="category-image "> <a href="/petrosubmmit"><img class="ip" width="100% " height="100% " src="/logo/PETROSUBMMIT.jpg "
                                             alt=" "></a>
 
                                         <div class="wave-wrapper hover_td fixhover">
                                             <div class="wave "></div>
                                         </div>
-                                        <div class="category-price "><a href="/petrolimex" style="color:#fff">petrolimex</a></div>
+                                        <div class="category-price "><a href="/petrosubmmit" style="color:#fff">PETROSUBMMIT </a></div>
                                     </div>
                                 </div>
                             </div>
@@ -581,7 +570,7 @@
         </div>
        
     
-           
+         <script src="/js/jquery.js"></script>
         <script>
             jQuery(window).scroll(function () {
                 if ( jQuery(this).scrollTop() > 180) {

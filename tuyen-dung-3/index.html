@@ -73,7 +73,7 @@
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
                 <script src="/js/jquery.js"></script>
-                <script>
+                 <script>
                      
                    jQuery(window).load(function() {
                        jQuery('.choose').removeClass('active');
@@ -87,7 +87,9 @@
                            }
                        })
                    });
-                </script>                <!doctype html>
+                </script>
+                
+                <!doctype html>
 <html lang="en">
 
 
@@ -204,7 +206,7 @@
 
 			</ul>
 		</li> -->
-		<li class="dropdown"> <a href="services.html" data-toggle="dropdown">Dịch Vụ<span class="ecaret"></span></a>
+		<li class="dropdown"> <a href="/dich-vu" data-toggle="dropdown">Dịch Vụ<span class="ecaret"></span></a>
 			<ul class="dropdown-menu" role="menu" style="display: none;">
 				<li class="dropdown-submenu"> <a href="/dich-vu/giam-dinh-thuong-mai" data-toggle="dropdown">GIÁM ĐỊNH THƯƠNG MẠI<span
 						 class="ecaret"></span></a>
@@ -278,22 +280,9 @@
 
 	</ul>
 </div>
-<script src="/js/jquery.js"></script>
-<script>
 
-	jQuery(window).load(function () {
-		jQuery('.choose').removeClass('active');
-		jQuery('.choose').each(function () {
-			var path = window.location.pathname.split("/"),
-				href = jQuery(this).find('a').attr('href').split("/"),
-				exactMatch = (path[1] === href[1]);
-			if (exactMatch) {
-				console.log(exactMatch);
-				jQuery(this).addClass('active');
-			}
-		})
-	});
-</script>
+
+
             </div>
         </nav>
     </header>
@@ -499,7 +488,7 @@
 
                                     <div style="text-align: left; ">
                                         <p style="border-top:1px solid #0099e7">Chi Tiết Tuyển Dụng</p>
-                                        <p> Ngày Tuyển Dụng : <time class="entry-date updated td-module-date" datetime=" 21 11 2018 "> 21/11/2018</time></p>
+                                        <p> Ngày Tuyển Dụng : <time class="entry-date updated td-module-date" datetime=" 22 11 2018 "> 22/11/2018</time></p>
                                         <p>Vị Trí : Kế toán viên</p>
                                         <p>
                                             <img alt="" src="http://eic.com.vn/uploads/images/bullet.png" />Số Lượng Tuyển Dụng : 2</p>
@@ -522,7 +511,7 @@
                                             <img alt="" src="http://eic.com.vn/uploads/images/bullet.png" />&nbsp;&nbsp;&nbsp;Mức lương : &nbsp; Thoả thuận</p>
 
                                         <br><br>                                         <p style="border-top:1px solid #0099e7">Chi Tiết Tuyển Dụng</p>
-                                        <p> Ngày Tuyển Dụng : <time class="entry-date updated td-module-date" datetime=" 21 11 2018 "> 21/11/2018</time></p>
+                                        <p> Ngày Tuyển Dụng : <time class="entry-date updated td-module-date" datetime=" 22 11 2018 "> 22/11/2018</time></p>
                                         <p>Vị Trí : Nhân Viên Kế Toán Tổng Hợp</p>
                                         <p>
                                             <img alt="" src="http://eic.com.vn/uploads/images/bullet.png" />Số Lượng Tuyển Dụng : 3</p>
@@ -545,7 +534,7 @@
                                             <img alt="" src="http://eic.com.vn/uploads/images/bullet.png" />&nbsp;&nbsp;&nbsp;Mức lương : &nbsp; Thoả thuận</p>
 
                                         <br><br>                                         <p style="border-top:1px solid #0099e7">Chi Tiết Tuyển Dụng</p>
-                                        <p> Ngày Tuyển Dụng : <time class="entry-date updated td-module-date" datetime=" 21 11 2018 "> 21/11/2018</time></p>
+                                        <p> Ngày Tuyển Dụng : <time class="entry-date updated td-module-date" datetime=" 22 11 2018 "> 22/11/2018</time></p>
                                         <p>Vị Trí : Nhân viên kế toán tổng hợp</p>
                                         <p>
                                             <img alt="" src="http://eic.com.vn/uploads/images/bullet.png" />Số Lượng Tuyển Dụng : 4</p>
@@ -608,7 +597,7 @@
         </div>
        
     
-           
+         <script src="/js/jquery.js"></script>
         <script>
             jQuery(window).scroll(function () {
                 if ( jQuery(this).scrollTop() > 180) {

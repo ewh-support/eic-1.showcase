@@ -88,7 +88,7 @@
 }
 
 .slick-initialized .slick-slide {
-    /* display: block; */
+    display: block;
 }
 .slick-dots{
     display: none !important;

@@ -73,7 +73,7 @@
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
                 <script src="/js/jquery.js"></script>
-                <script>
+                 <script>
                      
                    jQuery(window).load(function() {
                        jQuery('.choose').removeClass('active');
@@ -87,7 +87,9 @@
                            }
                        })
                    });
-                </script>                <!doctype html>
+                </script>
+                
+                <!doctype html>
 <html lang="en">
 
 
@@ -204,7 +206,7 @@
 
 			</ul>
 		</li> -->
-		<li class="dropdown"> <a href="services.html" data-toggle="dropdown">Dịch Vụ<span class="ecaret"></span></a>
+		<li class="dropdown"> <a href="/dich-vu" data-toggle="dropdown">Dịch Vụ<span class="ecaret"></span></a>
 			<ul class="dropdown-menu" role="menu" style="display: none;">
 				<li class="dropdown-submenu"> <a href="/dich-vu/giam-dinh-thuong-mai" data-toggle="dropdown">GIÁM ĐỊNH THƯƠNG MẠI<span
 						 class="ecaret"></span></a>
@@ -278,22 +280,9 @@
 
 	</ul>
 </div>
-<script src="/js/jquery.js"></script>
-<script>
 
-	jQuery(window).load(function () {
-		jQuery('.choose').removeClass('active');
-		jQuery('.choose').each(function () {
-			var path = window.location.pathname.split("/"),
-				href = jQuery(this).find('a').attr('href').split("/"),
-				exactMatch = (path[1] === href[1]);
-			if (exactMatch) {
-				console.log(exactMatch);
-				jQuery(this).addClass('active');
-			}
-		})
-	});
-</script>
+
+
             </div>
         </nav>
     </header>
@@ -325,20 +314,6 @@
                         </a>
                     </div>
                     <div class="col-sm-3">
-                        <a href="/giam-dinh-hang-hoa-khoang-san" class="service-banner active">
-                            <div class="service-banner-image">
-                                <img src="/HINHWEB/dichvu/giam+dinh+hoang+hoa+khoan+san_4_l.jpg" alt="">
-                            </div>
-                            <div class="service-banner-bg"></div>
-                            <div class="service-banner-title">
-                                <h6>Giám Định Hàng Hóa, Khoáng Sản</h6>
-                                <span class="service-banner-more-link">
-                                    <span class="icon icon-right-arrow"></span>
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-3">
                         <a href="/giam-dinh-hang-hai" class="service-banner active">
                             <div class="service-banner-image">
                                 <img src="/HINHWEB/dichvu/giam+dinh+hang+hai_3_l.jpg" alt="">
@@ -346,6 +321,20 @@
                             <div class="service-banner-bg"></div>
                             <div class="service-banner-title">
                                 <h6>Giám Định  Hàng Hải</h6>
+                                <span class="service-banner-more-link">
+                                    <span class="icon icon-right-arrow"></span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="/giam-dinh-hang-hoa-khoang-san" class="service-banner active">
+                            <div class="service-banner-image">
+                                <img src="/HINHWEB/dichvu/giam+dinh+hoang+hoa+khoan+san_4_l.jpg" alt="">
+                            </div>
+                            <div class="service-banner-bg"></div>
+                            <div class="service-banner-title">
+                                <h6>Giám Định Hàng Hóa, Khoáng Sản</h6>
                                 <span class="service-banner-more-link">
                                     <span class="icon icon-right-arrow"></span>
                                 </span>
@@ -457,7 +446,7 @@
         </div>
        
     
-           
+         <script src="/js/jquery.js"></script>
         <script>
             jQuery(window).scroll(function () {
                 if ( jQuery(this).scrollTop() > 180) {

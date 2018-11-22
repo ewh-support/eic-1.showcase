@@ -92,7 +92,7 @@
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
                 <script src="/js/jquery.js"></script>
-                <script>
+                 <script>
                      
                    jQuery(window).load(function() {
                        jQuery('.choose').removeClass('active');
@@ -106,7 +106,9 @@
                            }
                        })
                    });
-                </script>                <!doctype html>
+                </script>
+                
+                <!doctype html>
 <html lang="en">
 
 
@@ -223,7 +225,7 @@
 
 			</ul>
 		</li> -->
-		<li class="dropdown"> <a href="services.html" data-toggle="dropdown">Dịch Vụ<span class="ecaret"></span></a>
+		<li class="dropdown"> <a href="/dich-vu" data-toggle="dropdown">Dịch Vụ<span class="ecaret"></span></a>
 			<ul class="dropdown-menu" role="menu" style="display: none;">
 				<li class="dropdown-submenu"> <a href="/dich-vu/giam-dinh-thuong-mai" data-toggle="dropdown">GIÁM ĐỊNH THƯƠNG MẠI<span
 						 class="ecaret"></span></a>
@@ -297,22 +299,9 @@
 
 	</ul>
 </div>
-<script src="/js/jquery.js"></script>
-<script>
 
-	jQuery(window).load(function () {
-		jQuery('.choose').removeClass('active');
-		jQuery('.choose').each(function () {
-			var path = window.location.pathname.split("/"),
-				href = jQuery(this).find('a').attr('href').split("/"),
-				exactMatch = (path[1] === href[1]);
-			if (exactMatch) {
-				console.log(exactMatch);
-				jQuery(this).addClass('active');
-			}
-		})
-	});
-</script>
+
+
             </div>
         </nav>
     </header>
@@ -347,13 +336,29 @@
                             <li class="choose1" ><a href="/phan-tich-thu-nghiem-phuc-vu-hop-chuan-hop-quy">Phân tích thử nghiệm phục vụ hợp chuẩn hợp quy</a></li>
                             <li class="choose1" ><a href="/giam-dinh-ky-thuat-cao">Giám định kỹ thuật cao</a></li>
                             
-						</ul> -->
-                        
-                        <ul class="service-list">
-                            <li class="choose1"  ><a href="/kiem-dinh-hieu-chuan-bonbe-he-thong-tuyen-ong">Kiểm Định, Hiệu Chuẩn Bồn/Bể, Hệ Thống Tuyến Ống</a></li>
+						</ul> --> 
+                        <ul class="service-list"> 
+                                <li class="choose1"><a href="/">Dịch vụ category</a></li>        
+                                <li class="choose1"><a href="/">tư vấn đào tạo</a></li>        
+                                <li class="choose1"><a href="/">PHÂN TÍCH THỬ NGHIỆM</a></li>        
+                                <li class="choose1"><a href="/">Phân Tích Thử Nghiệm Phục Vụ Hợp Chuẩn Hợp Quy</a></li>        
+                                <li class="choose1"><a href="/">Kiểm Kê Kho</a></li>        
+                                <li class="choose1"><a href="/">Hiệu chuẩn  Tàu, Sà lan</a></li>        
+                                <li class="choose1"><a href="/">Kiểm Định, Hiệu Chuẩn Bồn/Bể, Hệ Thống Tuyến Ống</a></li>        
+                                <li class="choose1"><a href="/">Giám định Dầu thô, Xăng dầu, Khí hóa lỏng</a></li>        
+                                <li class="choose1"><a href="/">Giám Định Vật Tư, Máy Móc Thiết Bị</a></li>        
+                                <li class="choose1"><a href="/">Giám Định Tổn Thất Tài Sản Kỹ Thuật</a></li>        
+                                <li class="choose1"><a href="/">Giám Định Tổn Thất Hàng Hóa</a></li>        
+                                <li class="choose1"><a href="/">GIÁM ĐỊNH THỬ NGHIỆM PHỤC VỤ QUẢN LÝ NHÀ NƯỚC</a></li>        
+                                <li class="choose1"><a href="/">Giám Định  Hàng Hải</a></li>        
+                                <li class="choose1"><a href="/">Giám Định Hàng Hóa, Khoáng Sản</a></li>        
+                                <li class="choose1"><a href="/">Giám định kỹ thuật cao </a></li>        
+                                <li class="choose1"><a href="/">Giám Định Tổn Thất Hàng hải</a></li>        
+                               
+                           
 
-                        </ul>
-                        
+                         </ul>
+                              
 					</div>
 					<div class="col-md-8 col-lg-9">					
 						<h1 class="text-center decor color" style="font-size:38px">Kiểm Định, Hiệu Chuẩn Bồn/Bể, Hệ Thống Tuyến Ống</h1>
@@ -413,7 +418,7 @@
 			</div>
         </div>
 	
-
+ 
     <div class="divider-md "></div>
 
     </div>
@@ -459,7 +464,7 @@
         </div>
        
     
-           
+         <script src="/js/jquery.js"></script>
         <script>
             jQuery(window).scroll(function () {
                 if ( jQuery(this).scrollTop() > 180) {

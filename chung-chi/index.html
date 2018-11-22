@@ -65,7 +65,7 @@
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
                 <script src="/js/jquery.js"></script>
-                <script>
+                 <script>
                      
                    jQuery(window).load(function() {
                        jQuery('.choose').removeClass('active');
@@ -79,7 +79,9 @@
                            }
                        })
                    });
-                </script>                <!doctype html>
+                </script>
+                
+                <!doctype html>
 <html lang="en">
 
 
@@ -196,7 +198,7 @@
 
 			</ul>
 		</li> -->
-		<li class="dropdown"> <a href="services.html" data-toggle="dropdown">Dịch Vụ<span class="ecaret"></span></a>
+		<li class="dropdown"> <a href="/dich-vu" data-toggle="dropdown">Dịch Vụ<span class="ecaret"></span></a>
 			<ul class="dropdown-menu" role="menu" style="display: none;">
 				<li class="dropdown-submenu"> <a href="/dich-vu/giam-dinh-thuong-mai" data-toggle="dropdown">GIÁM ĐỊNH THƯƠNG MẠI<span
 						 class="ecaret"></span></a>
@@ -270,22 +272,9 @@
 
 	</ul>
 </div>
-<script src="/js/jquery.js"></script>
-<script>
 
-	jQuery(window).load(function () {
-		jQuery('.choose').removeClass('active');
-		jQuery('.choose').each(function () {
-			var path = window.location.pathname.split("/"),
-				href = jQuery(this).find('a').attr('href').split("/"),
-				exactMatch = (path[1] === href[1]);
-			if (exactMatch) {
-				console.log(exactMatch);
-				jQuery(this).addClass('active');
-			}
-		})
-	});
-</script>
+
+
             </div>
         </nav>
     </header>
@@ -503,7 +492,7 @@ Ban lãnh đạo và tập thể cán bộ công nhân viên của EIC luôn ph�
             </div>
            
         
-               
+             <script src="/js/jquery.js"></script>
             <script>
                 jQuery(window).scroll(function () {
                     if ( jQuery(this).scrollTop() > 180) {

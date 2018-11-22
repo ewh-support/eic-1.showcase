@@ -68,7 +68,7 @@
                     <i class="icon-up-arrow js-info-toggle"></i>
                 </div>
                 <script src="/js/jquery.js"></script>
-                <script>
+                 <script>
                      
                    jQuery(window).load(function() {
                        jQuery('.choose').removeClass('active');
@@ -82,7 +82,9 @@
                            }
                        })
                    });
-                </script>                <!doctype html>
+                </script>
+                
+                <!doctype html>
 <html lang="en">
 
 
@@ -199,7 +201,7 @@
 
 			</ul>
 		</li> -->
-		<li class="dropdown"> <a href="services.html" data-toggle="dropdown">Dịch Vụ<span class="ecaret"></span></a>
+		<li class="dropdown"> <a href="/dich-vu" data-toggle="dropdown">Dịch Vụ<span class="ecaret"></span></a>
 			<ul class="dropdown-menu" role="menu" style="display: none;">
 				<li class="dropdown-submenu"> <a href="/dich-vu/giam-dinh-thuong-mai" data-toggle="dropdown">GIÁM ĐỊNH THƯƠNG MẠI<span
 						 class="ecaret"></span></a>
@@ -273,22 +275,9 @@
 
 	</ul>
 </div>
-<script src="/js/jquery.js"></script>
-<script>
 
-	jQuery(window).load(function () {
-		jQuery('.choose').removeClass('active');
-		jQuery('.choose').each(function () {
-			var path = window.location.pathname.split("/"),
-				href = jQuery(this).find('a').attr('href').split("/"),
-				exactMatch = (path[1] === href[1]);
-			if (exactMatch) {
-				console.log(exactMatch);
-				jQuery(this).addClass('active');
-			}
-		})
-	});
-</script>
+
+
             </div>
         </nav>
     </header>
@@ -331,7 +320,7 @@
                         <div class="text text1">Giám Định Thương Mại</div>
                         <div class="container">
                             <div class="text text3">
-                                <a href="/giam-dinh-vat-tu-may-moc-thiet-bi" class="btn modal-popup-link">Giám Định Vật Tư, Máy Móc Thiết Bị</a>                                 <a href="/giam-dinh-hang-hoa-khoang-san" class="btn modal-popup-link">Giám Định Hàng Hóa, Khoáng Sản</a>                                 <a href="/giam-dinh-hang-hai" class="btn modal-popup-link">Giám Định  Hàng Hải</a>                                 <a href="/giam-dinh-dau-tho-xang-dau-khi-hoa-long" class="btn modal-popup-link">Giám định Dầu thô, Xăng dầu, Khí hóa lỏng</a> 
+                                <a href="/giam-dinh-vat-tu-may-moc-thiet-bi" class="btn modal-popup-link">Giám Định Vật Tư, Máy Móc Thiết Bị</a>                                 <a href="/giam-dinh-hang-hai" class="btn modal-popup-link">Giám Định  Hàng Hải</a>                                 <a href="/giam-dinh-hang-hoa-khoang-san" class="btn modal-popup-link">Giám Định Hàng Hóa, Khoáng Sản</a>                                 <a href="/giam-dinh-dau-tho-xang-dau-khi-hoa-long" class="btn modal-popup-link">Giám định Dầu thô, Xăng dầu, Khí hóa lỏng</a> 
                             </div>
                         </div>
 
@@ -367,7 +356,7 @@
                         <div class="text text1">Đo Lường Hiệu Chuẩn</div>
                         <div class="container">
                             <div class="text text3">
-                                <a href="/kiem-dinh-hieu-chuan-tau-sa-lan" class="btn modal-popup-link">Hiệu chuẩn  Tàu, Sà lan</a>                                 <a href="/kiem-ke-kho" class="btn modal-popup-link">Kiểm Kê Kho</a>                                 <a href="/kiem-dinh-hieu-chuan-bonbe-he-thong-tuyen-ong" class="btn modal-popup-link">Kiểm Định, Hiệu Chuẩn Bồn/Bể, Hệ Thống Tuyến Ống</a> 
+                                <a href="/kiem-ke-kho" class="btn modal-popup-link">Kiểm Kê Kho</a>                                 <a href="/kiem-dinh-hieu-chuan-tau-sa-lan" class="btn modal-popup-link">Hiệu chuẩn  Tàu, Sà lan</a>                                 <a href="/kiem-dinh-hieu-chuan-bonbe-he-thong-tuyen-ong" class="btn modal-popup-link">Kiểm Định, Hiệu Chuẩn Bồn/Bể, Hệ Thống Tuyến Ống</a> 
                             </div>
                         </div>
 
@@ -712,7 +701,7 @@
                         <div class="slick-track" style="opacity: 1; width: 1170px; transform: translate3d(0px, 0px, 0px);">
                             <div class="col-sm-6 col-md-4 slick-slide slick-active col-lg-3" data-slick-index="0"
                                 aria-hidden="false">
-                                <div class="news-item animation animated fadeInLeft col-sm-12 data-animation="fadeInLeft"
+                                <div class="news-item animation animated fadeInLeft " data-animation="fadeInLeft"
                                     data-animation-delay="0s" style="animation-delay: 0s;">
                                     <div class="news-item-image"><a href="/chung-chi"><img src="/img/chungchi/9001.gif" alt="" class="img-responsive"></a></div>
                                     <div class="news-item-text" style="height:100px">
@@ -941,6 +930,18 @@
                       
                 <div class="gallery__item">
                     <div class="gallery__item__image">
+                        <img src="../HINHWEB/duan/16_original.jpg" alt="" style="height:300px;" />
+                        <a class="hover" href="../HINHWEB/duan/16_original.jpg">
+                            <h6 class="item-name">Dự Án 9</h6>
+
+                            <div class="item-period">3 tuần</div>
+                            <div class="item-location">Nhà Bè, Hồ Chí Minh</div>
+                        </a>
+                    </div>
+                </div>
+                 
+                <div class="gallery__item">
+                    <div class="gallery__item__image">
                         <img src="../HINHWEB/A4.jpg" alt="" style="height:300px;" />
                         <a class="hover" href="../HINHWEB/A4.jpg">
                             <h6 class="item-name">Dự Án Chưa Cập Nhật</h6>
@@ -953,24 +954,12 @@
                  
                 <div class="gallery__item">
                     <div class="gallery__item__image">
-                        <img src="../HINHWEB/duan/service3-2.jpg" alt="" style="height:300px;" />
-                        <a class="hover" href="../HINHWEB/duan/service3-2.jpg">
+                        <img src="HINHWEB/Bosch-Rexroth-Opens-Marine-and-Offshore-Technology-and-Service-Center-USA-1024x702.jpg" alt="" style="height:300px;" />
+                        <a class="hover" href="HINHWEB/Bosch-Rexroth-Opens-Marine-and-Offshore-Technology-and-Service-Center-USA-1024x702.jpg">
                             <h6 class="item-name">Dự Án 8</h6>
 
                             <div class="item-period">1 tuần</div>
                             <div class="item-location">Vũng Tàu</div>
-                        </a>
-                    </div>
-                </div>
-                 
-                <div class="gallery__item">
-                    <div class="gallery__item__image">
-                        <img src="../HINHWEB/duan/16_original.jpg" alt="" style="height:300px;" />
-                        <a class="hover" href="../HINHWEB/duan/16_original.jpg">
-                            <h6 class="item-name">Dự Án 9</h6>
-
-                            <div class="item-period">3 tuần</div>
-                            <div class="item-location">Nhà Bè, Hồ Chí Minh</div>
                         </a>
                     </div>
                 </div>
@@ -989,12 +978,12 @@
                  
                 <div class="gallery__item">
                     <div class="gallery__item__image">
-                        <img src="../HINHWEB/duan/28164239-big-industrial-oil-tanks-in-a-refinery-at.jpg" alt="" style="height:300px;" />
-                        <a class="hover" href="../HINHWEB/duan/28164239-big-industrial-oil-tanks-in-a-refinery-at.jpg">
-                            <h6 class="item-name">Dự Án 6</h6>
+                        <img src="../HINHWEB/duan/Gas-storage-tanks.jpg" alt="" style="height:300px;" />
+                        <a class="hover" href="../HINHWEB/duan/Gas-storage-tanks.jpg">
+                            <h6 class="item-name">Dự Án 7</h6>
 
-                            <div class="item-period">3 tuần</div>
-                            <div class="item-location">Nhà Bè, Hồ Chí Minh</div>
+                            <div class="item-period">4 tuần</div>
+                            <div class="item-location">Bạch Hổ, Vũng Tàu</div>
                         </a>
                     </div>
                 </div>
@@ -1174,7 +1163,7 @@
         </div>
        
     
-           
+         <script src="/js/jquery.js"></script>
         <script>
             jQuery(window).scroll(function () {
                 if ( jQuery(this).scrollTop() > 180) {
@@ -1379,6 +1368,8 @@
     <script src="/js/plugins/jquery.form.js"></script>
     <script src="/js/plugins/jquery.validate.min.js"></script>
     <script src="/js/custom.js"></script>
+
+
 </body>
 
 </html>
