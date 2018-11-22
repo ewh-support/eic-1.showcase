@@ -164,7 +164,7 @@ $document.ready(function () {
 	if (plugins.mainSlider.length) {
 		plugins.mainSlider.nivoSlider({
 			animSpeed: 500,
-			pauseTime: 5000,
+			pauseTime: 8000,
 			pauseOnHover: false,
 			effect: 'boxRainGrowReverse',
 			prevText: '',
