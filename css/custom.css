@@ -5410,7 +5410,7 @@
         padding: 25px 29px 20px;
         position: relative;
         flex: 1;
-        height: 350px;
+        height: 250px;
     }
     
     @media (max-width: 767px) {
